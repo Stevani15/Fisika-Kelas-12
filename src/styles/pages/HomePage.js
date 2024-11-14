@@ -1,6 +1,6 @@
 import React from 'react';
-import '../pages/HomePage';
-import '../styles/HomePage';
+import '../pages/HomePage.js';
+import '../styles/Style.css';
 
 const HomePage = () => {
     //daftar kategori materi
