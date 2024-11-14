@@ -21,7 +21,7 @@ function HomePage() {
             <main className="main-content">
                 <section className="subject-card">
                     <h2>FISIKA</h2>
-                    <p>12 MIA SMA | 11 Materi</p>
+                    <p>12 MIA SMA | 8 Materi</p>
                     <div className="actions">
                         <button className="write-review">Tulis Ulasan</button>
                         <button className="add-favorite">Tambah Ke Favorit</button>
