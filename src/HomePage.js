@@ -1,7 +1,17 @@
 import React from 'react';
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom'; // Untuk navigasi ke halaman lain
 
 function HomePage() {
+    const navigate = useNavigate(); // Inisialisasi navigasi React Router
+
+    // Fungsi untuk menangani klik kartu topik
+    const handleTopicClick = (topic) => {
+        if (topic === "Medan Magnetik") {
+            navigate('/medan-magnetik'); // Navigasi ke halaman Medan Magnetik
+        }
+    };
+
     return (
         <div className="homepage">
             <header className="header">
@@ -27,39 +37,35 @@ function HomePage() {
                         <button className="add-favorite">Tambah Ke Favorit</button>
                     </div>
                     <div className="topics">
-                        <div className="topic-card">
+                        <div
+                            className="topic-card"
+                            onClick={() => handleTopicClick("Rangkaian Arus Searah")}
+                        >
                             <h3>Rangkaian Arus Searah</h3>
                             <p>3 Sub Bab Materi</p>
                         </div>
-                        <div className="topic-card">
+                        <div
+                            className="topic-card"
+                            onClick={() => handleTopicClick("Gelombang Elektromagnetik")}
+                        >
                             <h3>Gelombang Elektromagnetik</h3>
                             <p>3 Sub Bab Materi</p>
                         </div>
-                        <div className="topic-card">
+                        <div
+                            className="topic-card"
+                            onClick={() => handleTopicClick("Medan Magnetik")}
+                        >
                             <h3>Medan Magnetik</h3>
                             <p>3 Sub Bab Materi</p>
                         </div>
-                        <div className="topic-card">
+                        <div
+                            className="topic-card"
+                            onClick={() => handleTopicClick("Induksi Elektromagnetik")}
+                        >
                             <h3>Induksi Elektromagnetik</h3>
                             <p>2 Sub Bab Materi</p>
                         </div>
-                         <div className="topic-card">
-                            <h3>Rangkaian Arus Bolak-Balik</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
-                            <h3>Fisika Modern</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
-                            <h3>Teknologi Digital</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
-                            <h3>Sumber Energi</h3>
-                            <p>4 Sub Bab Materi</p>
-                        </div>
-                        
+                        {/* Tambahkan topik lain jika diperlukan */}
                     </div>
                 </section>
             </main>
