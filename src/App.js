@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import HomePage from './HomePage';
+import HomePage from './styles/HomePage';
+import AC from "./styles/AC";
+
 
 function App() {
     return (
-        <div className="App">
-            <HomePage />
-        </div>
+        <Router>
+        <Routes>
+          <Route path="HomePage" element={<HomePage />} />
+          <Route path="AC" element={<AC />} />
+        </Routes>
+      </Router>
     );
 }
 
