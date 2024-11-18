@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage'; // Impor file HomePage
+import HomePage from './components/HomePage'; // Impor file HomePage
+import './components/HomePage.css';
 import MedanMagnetik from './components/MedanMagnetik'; // Impor halaman Medan Magnetik
 
 function App() {
