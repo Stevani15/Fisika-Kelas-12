@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 function HomePage() {
@@ -37,6 +38,7 @@ function HomePage() {
                         </div>
                         <div className="topic-card">
                             <h3>Medan Magnetik</h3>
+                            <Link to="/medanmagnetik"></Link>
                             <p>3 Sub Bab Materi</p>
                         </div>
                         <div className="topic-card">
