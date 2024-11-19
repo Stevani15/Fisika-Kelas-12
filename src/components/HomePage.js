@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 import './SumberEnergi';
 import './MedanMagnetik';
+import './GelombangElektromagnetik';
+import './InduksiElektromagnetik';
+import './RangkaianArusBolakBalik'
+import './RangkaianArusSearah';
+import './TeknologiDigital';
+import './FisikaModern';
+import './FAQ';
 
 function HomePage() {
     return (
@@ -11,12 +18,6 @@ function HomePage() {
                 <img src="logo.png" alt="Logo" className="logo" />
                 <nav className="nav">
                     <a href="#home">Beranda</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#schools">Sekolah Dan Kampus</a>
-                    <a href="#learn">Belajar</a>
-                    <a href="#tests">Tes Minat Bakat</a>
-                    <a href="#scholarships">Beasiswa</a>
-                    <a href="#services">Layanan</a>
                     <a href="#faq">FAQ</a>
                     <button className="login-button">Login</button>
                 </nav>
