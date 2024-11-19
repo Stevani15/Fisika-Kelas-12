@@ -1,0 +1,25 @@
+.sumber-energi-container {
+    width: 200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sumber-energi-icon {
+   color: #ccc;
+   background-color: blue;
+  }
+  
+  .sumber-energi-details {
+    color: #ccc;
+    /* Style the details section */
+  }
+  
+  .sumber-energi-details h3 {
+    color: #ccc;
+  }
