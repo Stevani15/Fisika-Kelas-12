@@ -85,8 +85,8 @@ function App() {
           {/* Route untuk Homepage */}
           <Route path="/" element={<HomePage />} />
           {/* Route untuk Halaman Medan Magnetik */}
-          <Route path="/AC" element={<AC />} />
           <Route path="/MedanMagnetik" element={<MedanMagnetik />} />
+          <Route path="/AC" element={<AC />} />
           <Route path="/SumberEnergi" element={<SumberEnergi />} />
           <Route path="/TeknologiDigital" element={<TeknologiDigital />} />
           <Route path="/FisikaModern" element={<FisikaModern />} />
