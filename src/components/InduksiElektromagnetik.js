@@ -19,7 +19,7 @@ function InduksiElektromagnetik() {
           </div>
           <div className="col-md-4 d-flex justify-content-center">
             <img
-              src="https://i.pinimg.com/474x/a3/7f/c7/a37fc7519df433dcef281646293b9465.jpg"
+              src="https://i.pinimg.com/474x/a3/7f/c7/a37fc7519df433dcef281646293b9465.jpg
               alt="Michael Faraday"
               className="img-fluid rounded"
             />
