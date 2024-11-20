@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './HomePage.css';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap';
-import SumberEnergi from './SumberEnergi'; // Import the SumberEnergi component
+import SumberEnergi from './SumberEnergi';
 
 const HomePage = () => {
   const [showSumberEnergi, setShowSumberEnergi] = useState(false);

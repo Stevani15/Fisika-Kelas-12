@@ -15,7 +15,7 @@ function HomePage() {
     return (
         <div className="homepage">
             <header className="header">
-                <img src="logo.png" alt="Logo" className="logo" />
+                <img src="FISIKA.jpg" alt="FISIKA" className="logo" />
                 <nav className="nav">
                     <a href="#home">Beranda</a>
                     <a href="#faq">FAQ</a>
@@ -31,40 +31,41 @@ function HomePage() {
                         <button className="add-favorite">Tambah Ke Favorit</button>
                     </div>
                     <div className="topics">
-                        <div className="topic-card">
-                            <h3>Rangkaian Arus Searah</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                        <div className="topic-card">
-                            <h3>Gelombang Elektromagnetik</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                        <div className="topic-card">
+                    <Link to="/MedanMagnetik" className="topic-card">
                             <h3>Medan Magnetik</h3>
-                            <Link to="/medanmagnetik"></Link>
                             <p>3 Sub Bab Materi</p>
-                        </div>
-                        <div className="topic-card">
-                            <h3>Induksi Elektromagnetik</h3>
-                            <p>2 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
-                            <h3>Rangkaian Arus Bolak-Balik</h3>
-                            <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
+                    </Link>
+
+                    <Link to="/FisikaModern" className="topic-card">
                             <h3>Fisika Modern</h3>
                             <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
+                    </Link>
+
+                    <Link to="/InduksiElektromagnetik" className="topic-card">
+                            <h3>Induksi Elektromagnetik</h3>
+                            <p>3 Sub Bab Materi</p>
+                    </Link>
+                    <Link to="/RangkaianArusBolakBalik" className="topic-card">
+                            <h3>Rangkaian Arus Bolak-Balik</h3>
+                            <p>3 Sub Bab Materi</p>
+                    </Link>
+                    <Link to="/RangkaianArusSearah" className="topic-card">
+                            <h3>Rangkaian Arus Bolak-Balik</h3>
+                            <p>3 Sub Bab Materi</p>
+                    </Link>
+                    <Link to="/SumberEnergi" className="topic-card">
+                            <h3>Sumber Energi</h3>
+                            <p>3 Sub Bab Materi</p>
+                    </Link>
+                    <Link to="/TeknologiDigital" className="topic-card">
                             <h3>Teknologi Digital</h3>
                             <p>3 Sub Bab Materi</p>
-                        </div>
-                         <div className="topic-card">
-                            <h3>Sumber Energi</h3>
-                            <p>4 Sub Bab Materi</p>
-                        </div>
-                        
+                    </Link>
+
+                    <Link to="/GelombangElektromagnetik" className="topic-card">
+                            <h3>Gelombang Elektromagnetik</h3>
+                            <p>3 Sub Bab Materi</p>
+                    </Link>  
                     </div>
                 </section>
             </main>
