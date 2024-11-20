@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
-import SumberEnergi from './SumberEnergi';
+import './SumberEnergi';
+import './MedanMagnetik';
+import './GelombangElektromagnetik';
+import './InduksiElektromagnetik';
+import './RangkaianArusBolakBalik'
+import './RangkaianArusSearah';
+import './TeknologiDigital';
+import './FisikaModern';
 
 const HomePage = () => {
   const [showSumberEnergi, setShowSumberEnergi] = useState(false);
@@ -11,29 +18,40 @@ const HomePage = () => {
   };
 
   return (
-    <div className="home-page-container">
-      <Container>
-        <Row>
-          <Col md={4}>
-            <Card className="topic-card" onClick={handleSumberEnergiClick}>
-              <Card.Body>
-                <div className="topic-icon">
-                  {/* Add your icon here */}
-                </div>
-                <Card.Title>Sumber Energi</Card.Title>
-                <Card.Text>4 Sub Bab Materi</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Add other topic cards here */}
-        </Row>
-      </Container>
+    <div className="topics">
+    <Link to="/MedanMagnetik" className="topic-card">
+            <h3>Medan Magnetik</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
 
-      {showSumberEnergi && (
-        <SumberEnergi /> // Render SumberEnergi component if showSumberEnergi is true
-      )}
+    <Link to="/FisikaModern" className="topic-card">
+            <h3>Fisika Modern</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
+
+    <Link to="/InduksiElektromagnetik" className="topic-card">
+            <h3>Induksi Elektromagnetik</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
+    <Link to="/RangkaianArusBolakBalik" className="topic-card">
+            <h3>Rangkaian Arus Bolak-Balik</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
+    <Link to="/RangkaianArusSearah" className="topic-card">
+            <h3>Rangkaian Arus Bolak-Balik</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
+    <Link to="/TeknologiDigital" className="topic-card">
+            <h3>Teknologi Digital</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>
+
+    <Link to="/GelombangElektromagnetik" className="topic-card">
+            <h3>Gelombang Elektromagnetik</h3>
+            <p>3 Sub Bab Materi</p>
+    </Link>  
     </div>
-  );
+);
 };
 
 export default HomePage;
