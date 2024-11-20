@@ -48,7 +48,7 @@ function HomePage() {
                             <p>3 Sub Bab Materi</p>
                     </Link>
                     <Link to="/RangkaianArusSearah" className="topic-card">
-                            <h3>Rangkaian Arus Bolak-Balik</h3>
+                            <h3>Rangkaian Arus Searah</h3>
                             <p>3 Sub Bab Materi</p>
                     </Link>
                     <Link to="/SumberEnergi" className="topic-card">
