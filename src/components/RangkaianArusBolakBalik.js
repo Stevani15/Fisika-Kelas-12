@@ -118,7 +118,13 @@ function RangkaianArusBolakbalik() {
   Dalam sistem AC, tegangan dan arus memiliki bentuk gelombang sinusoidal yang 
   dinyatakan dengan persamaan:
 </p>
-
+<div className="col-md-4 d-flex justify-content-center">
+            <img
+              src="https://circuitdigest.com/sites/default/files/projectimage_tut/What-is-AC-circuit_0.png"
+              alt="Michael Faraday
+              className="img-fluid rounded
+            />
+          </div>
 <p>
   <b>i(t) = I<sub>m</sub> sin(ωt)</b>
 </p>
