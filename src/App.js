@@ -29,7 +29,6 @@ function App() {
           <Route path="/GelombangElektromagnetik" element={<GelombangElektromagnetik />} />
           <Route path="/RangkaianArusSearah" element={<RangkaianArusSearah />} />
         </Routes>
-      </div>
     </Router>
   );
 }
