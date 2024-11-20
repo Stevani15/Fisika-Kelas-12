@@ -1,235 +1,52 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import "../AC.css";
+import React from "react";
+import "./Ac.css";
 
-function RangkaianArusBolakBalik() {
-  const [answers, setAnswers] = useState({});
-  const [showResults, setShowResults] = useState(false);
-  const [score, setScore] = useState(0);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-
-  const questions = [
-    {
-      id: 1,
-      question: "Hitung reaktansi induktif (X<sub>L</sub>) untuk frekuensi 50 Hz dan induktor 0.1 H.",
-      options: ["31.4 Ω", "25.5 Ω", "40.2 Ω", "28.3 Ω"],
-      answer: "31.4 Ω",
-      solution:
-        "X<sub>L</sub> = 2πfL = 2 * π * 50 * 0.1 = 31.4 Ω",
-    },
-
-  ];
-
-  const totalQuestions = questions.length;
-
-  const handleAnswerChange = (questionId, selectedAnswer) => {
-    setAnswers({ ...answers, [questionId]: selectedAnswer });
-  };
-
-  const checkAnswers = () => {
-    if (Object.keys(answers).length < totalQuestions) {
-      alert("Harap jawab semua pertanyaan sebelum mengirimkan.");
-      return;
-    }
-    let correctAnswers = 0;
-    questions.forEach((question) => {
-      if (answers[question.id] === question.answer) correctAnswers++;
-    });
-    setScore(correctAnswers);
-    setShowResults(true);
-  };
-
-  const resetQuiz = () => {
-    setAnswers({});
-    setShowResults(false);
-    setScore(0);
-    setCurrentQuestion(0);
-  };
-
+const RangkaianArusBolakBalik= () => {
   return (
-    <div className="container mt-4">
-      <h2>Arus Bolak-Balik (AC)</h2>
+    <div className="container">
+      <h2>Ringkasan Materi: Arus Bolak-Balik (AC)</h2>
       <p>
-        Arus bolak-balik (AC) adalah arus listrik yang berubah arah secara
-        periodik. Arus ini digunakan dalam jaringan listrik rumah tangga dan
-        banyak aplikasi industri karena efisiensinya dalam transmisi daya pada
-        jarak jauh. Dalam sistem AC, tegangan dan arus memiliki bentuk
-        gelombang sinusoidal yang dinyatakan dengan persamaan:
-      </p>
-      <p>
-        <b>i(t) = I<sub>m</sub> sin(ωt)</b>
-      </p>
-      <p>Di mana:</p>
-      <ul>
-        <li>
-          <b>i(t):</b> Nilai arus sesaat (ampere)
-        </li>
-        <li>
-          <b>I<sub>m</sub>:</b> Amplitudo arus maksimum (ampere)
-        </li>
-        <li>
-          <b>ω:</b> Kecepatan sudut = 2πf (rad/s), dengan f adalah frekuensi
-          (Hz)
-        </li>
-        <li>
-          <b>t:</b> Waktu (s)
-        </li>
-      </ul>
-      <h4>Komponen dalam Rangkaian AC</h4>
-      <ul>
-        <li>
-          <b>Resistor (R):</b> Mengubah energi listrik menjadi panas tanpa
-          memengaruhi frekuensi arus.
-        </li>
-        <li>
-          <b>Induktor (L):</b> Menghasilkan reaktansi induktif (X<sub>L</sub>).
-        </li>
-        <li>
-          <b>Kapasitor (C):</b> Menghasilkan reaktansi kapasitif (X<sub>C</sub>).
-        </li>
-      </ul>
-      <h4>Rumus Penting</h4>
-      <ul>
-        <li>
-          Reaktansi Induktif: <b>X<sub>L</sub> = 2πfL</b>
-        </li>
-        <li>
-          Reaktansi Kapasitif: <b>X<sub>C</sub> = 1 / (2πfC)</b>
-        </li>
-        <li>
-          Impedansi: <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>
-        </li>
-        <li>
-          Arus Efektif: <b>I<sub>rms</sub> = V<sub>rms</sub> / Z</b>
-        </li>
-      </ul>
-      <p>
-        Pemahaman tentang arus bolak-balik sangat penting dalam aplikasi
-        elektronik, motor listrik, dan transmisi daya.
+        Arus bolak-balik adalah arus listrik yang besar dan arah alirannya berubah secara periodik. Arus ini banyak digunakan dalam berbagai aplikasi, seperti listrik rumah tangga dan perangkat elektronik.
       </p>
 
-
-      <div className="mt-4">
-        <h4>Kuis</h4>
-        <h5>Pertanyaan {currentQuestion + 1} dari {totalQuestions}</h5>
+      <div className="subMateri">
+        <h3 className="title">1. Karakteristik Arus Bolak-Balik</h3>
         <p>
-          <strong dangerouslySetInnerHTML={{ __html: questions[currentQuestion].question }}></strong>
+          Arus bolak-balik memiliki sifat yang berubah secara periodik. Tiga karakteristik utama adalah:
+          <ul>
+            <li><b>Frekuensi</b> (f): Jumlah siklus per detik, diukur dalam Hertz (Hz).</li>
+            <li><b>Tegangan Efektif</b> (V<sub>ef</sub>): Tegangan yang memiliki daya setara dengan tegangan DC, dihitung dengan V<sub>ef</sub> = V<sub>m</sub>/√2.</li>
+            <li><b>Arus Efektif</b> (I<sub>ef</sub>): Arus yang menghasilkan daya yang sama dengan arus searah, dihitung dengan I<sub>ef</sub> = I<sub>m</sub>/√2.</li>
+          </ul>
         </p>
-        {questions[currentQuestion].options.map((option, index) => (
-          <div key={index} className="form-check">
-            <input
-              type="radio"
-              id={`question-${questions[currentQuestion].id}-option-${index}`}
-              name={`question-${questions[currentQuestion].id}`}
-              value={option}
-              className="form-check-input"
-              checked={answers[questions[currentQuestion].id] === option}
-              onChange={() => handleAnswerChange(questions[currentQuestion].id, option)}
-            />
-            <label
-              className="form-check-label"
-              htmlFor={`question-${questions[currentQuestion].id}-option-${index}`}
-            >
-              {option}
-            </label>
-          </div>
-        ))}
-        <div className="mt-3">
-          <button
-            className="btn btn-secondary me-2"
-            onClick={() => setCurrentQuestion((prev) => Math.max(prev - 1, 0))}
-            disabled={currentQuestion === 0}
-          >
-            Sebelumnya
-          </button>
-          <button
-            className="btn btn-secondary"
-            onClick={() => setCurrentQuestion((prev) => Math.min(prev + 1, totalQuestions - 1))}
-            disabled={currentQuestion === totalQuestions - 1}
-          >
-            Selanjutnya
-          </button>
-          {currentQuestion === totalQuestions - 1 && (
-            <button className="btn btn-primary mt-3" onClick={checkAnswers}>
-              Cek Jawaban
-            </button>
-          )}
-        </div>
-        {showResults && (
-          <div className="mt-4">
-            <h4>Hasil Jawaban</h4>
-            {questions.map((question) => {
-              const isCorrect = answers[question.id] === question.answer;
-              return (
-                <div key={question.id} className="mb-3">
-                  <p>
-                    <strong dangerouslySetInnerHTML={{ __html: question.question }}></strong>
-                    <br />
-                    Jawaban Anda: <b>{answers[question.id] || "Belum dijawab"}</b>
-                    {isCorrect ? (
-                      <span className="text-success ms-2">Benar!</span>
-                    ) : (
-                      <span className="text-danger ms-2">
-                        Salah. Jawaban yang benar: <b>{question.answer}</b>
-                      </span>
-                    )}
-                  </p>
-                  <p>
-                    <b>Penjelasan:</b> <span dangerouslySetInnerHTML={{ __html: question.solution }}></span>
-                  </p>
-                </div>
-              );
-            })}
-            <h5>Skor Anda: {score} dari {totalQuestions}</h5>
-            <button className="btn btn-secondary mt-3" onClick={resetQuiz}>
-              Ulangi Kuis
-            </button>
-          </div>
-        )}
       </div>
-    </div>
-  );
-}
 
-export default RangkaianArusBolakBalik;
-=======
-import React, { useState } from 'react';
-import './HomePage.css';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
-import SumberEnergi from './SumberEnergi'; // Import the SumberEnergi component
+      <div className="subMateri">
+        <h3 className="title">2. Rangkaian RLC pada Arus Bolak-Balik</h3>
+        <p>
+          Rangkaian listrik yang terdiri dari resistor (R), induktor (L), dan kapasitor (C) memiliki pengaruh yang berbeda pada arus bolak-balik:
+          <ul>
+            <li><b>Resistor (R)</b>: Tidak mengubah fasa arus, hanya menghasilkan penurunan tegangan.</li>
+            <li><b>Induktor (L)</b>: Arus tertinggal 90° di belakang tegangan. Reaktansi induktif: X<sub>L</sub> = ωL.</li>
+            <li><b>Kapasitor (C)</b>: Arus mendahului tegangan 90°. Reaktansi kapasitif: X<sub>C</sub> = 1/ωC.</li>
+          </ul>
+          Impedansi total rangkaian RLC adalah: <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>.
+        </p>
+      </div>
 
-const HomePage = () => {
-  const [showSumberEnergi, setShowSumberEnergi] = useState(false);
-
-  const handleSumberEnergiClick = () => {
-    setShowSumberEnergi(true);
-  };
-
-  return (
-    <div className="home-page-container">
-      <Container>
-        <Row>
-          <Col md={4}>
-            <Card className="topic-card" onClick={handleSumberEnergiClick}>
-              <Card.Body>
-                <div className="topic-icon">
-                  {/* Add your icon here */}
-                </div>
-                <Card.Title>Sumber Energi</Card.Title>
-                <Card.Text>4 Sub Bab Materi</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Add other topic cards here */}
-        </Row>
-      </Container>
-
-      {showSumberEnergi && (
-        <SumberEnergi /> // Render SumberEnergi component if showSumberEnergi is true
-      )}
+      <div className="subMateri">
+        <h3 className="title">3. Daya pada Rangkaian AC</h3>
+        <p>
+          Daya pada rangkaian AC dapat dibagi menjadi beberapa jenis:
+          <ul>
+            <li><b>Daya Nyata (P)</b>: Daya yang benar-benar digunakan dalam rangkaian, dihitung dengan P = V<sub>ef</sub> * I<sub>ef</sub> * cos(φ).</li>
+            <li><b>Daya Reaktif (Q)</b>: Daya yang disimpan dan dilepaskan kembali dalam komponen induktif atau kapasitif, dihitung dengan Q = V<sub>ef</sub> * I<sub>ef</sub> * sin(φ).</li>
+            <li><b>Daya Semu (S)</b>: Gabungan dari daya nyata dan reaktif, dihitung dengan S = V<sub>ef</sub> * I<sub>ef</sub>.</li>
+          </ul>
+        </p>
+      </div>
     </div>
   );
 };
 
-export default HomePage;
->>>>>>> 8b696ad901c8e75ba0a3b3866ec7f1105d114470
+export default RangkaianArusBolakBalik;
