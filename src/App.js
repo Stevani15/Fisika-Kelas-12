@@ -14,6 +14,7 @@ import TeknologiDigital from './components/TeknologiDigital';
 function App() {
   return (
     <Router>
+<<<<<<< HEAD
       <div className="App">
         <nav style={{ padding: '10px', background: '#333', color: '#fff' }}>
           <Link 
@@ -74,6 +75,8 @@ function App() {
         </nav>
 
         {/* Routes untuk halaman */}
+=======
+>>>>>>> 8b696ad901c8e75ba0a3b3866ec7f1105d114470
         <Routes>
           {/* Route untuk Homepage */}
           <Route path="/" element={<HomePage />} />
@@ -87,7 +90,6 @@ function App() {
           <Route path="/GelombangElektromagnetik" element={<GelombangElektromagnetik />} />
           <Route path="/RangkaianArusSearah" element={<RangkaianArusSearah />} />
         </Routes>
-      </div>
     </Router>
   );
 }
