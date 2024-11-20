@@ -1,14 +1,15 @@
 import React from "react";
 import "../AC.css";
 
-const RangkaianArusBolakBalik= () => {
+const App = () => {
   return (
     <div className="container">
-      <h2>Arus Bolak-Balik (AC)</h2>
+      <h2>Ringkasan Materi: Arus Bolak-Balik (AC)</h2>
       <p>
         Arus bolak-balik adalah arus listrik yang besar dan arah alirannya berubah secara periodik. Arus ini banyak digunakan dalam berbagai aplikasi, seperti listrik rumah tangga dan perangkat elektronik.
       </p>
 
+      {/* Submateri 1 */}
       <div className="subMateri">
         <h3 className="title">1. Karakteristik Arus Bolak-Balik</h3>
         <p>
@@ -21,6 +22,7 @@ const RangkaianArusBolakBalik= () => {
         </p>
       </div>
 
+      {/* Submateri 2 */}
       <div className="subMateri">
         <h3 className="title">2. Rangkaian RLC pada Arus Bolak-Balik</h3>
         <p>
@@ -30,10 +32,17 @@ const RangkaianArusBolakBalik= () => {
             <li><b>Induktor (L)</b>: Arus tertinggal 90° di belakang tegangan. Reaktansi induktif: X<sub>L</sub> = ωL.</li>
             <li><b>Kapasitor (C)</b>: Arus mendahului tegangan 90°. Reaktansi kapasitif: X<sub>C</sub> = 1/ωC.</li>
           </ul>
-          Impedansi total rangkaian RLC adalah: <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>.
+        </p>
+        <p>
+          Impedansi total rangkaian RLC pada <b>seri</b> adalah:
+          <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>.
+        </p>
+        <p>
+          Pada rangkaian <b>paralel</b>, komponen-komponen terhubung secara paralel, dan impedansi total dihitung dengan rumus: <b>1/Z = 1/R + 1/X<sub>L</sub> + 1/X<sub>C</sub></b>.
         </p>
       </div>
 
+      {/* Submateri 3 */}
       <div className="subMateri">
         <h3 className="title">3. Daya pada Rangkaian AC</h3>
         <p>
@@ -49,4 +58,4 @@ const RangkaianArusBolakBalik= () => {
   );
 };
 
-export default RangkaianArusBolakBalik;
+export default App;
