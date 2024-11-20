@@ -108,10 +108,7 @@ function RangkaianArusBolakbalik() {
       ? "Bagus! Anda sudah memahami sebagian besar materi."
       : "Coba lagi! Pelajari lebih dalam konsepnya.";
 
-  return (
-    <div>
-
-     
+  return (    <div>
       <div className="container mt-4">
       <h2>Arus Bolak-Balik (AC)</h2>
 <p>
