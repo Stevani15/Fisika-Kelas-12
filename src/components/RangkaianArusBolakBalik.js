@@ -8,8 +8,6 @@ const App = () => {
       <p>
         Arus bolak-balik adalah arus listrik yang besar dan arah alirannya berubah secara periodik. Arus ini banyak digunakan dalam berbagai aplikasi, seperti listrik rumah tangga dan perangkat elektronik.
       </p>
-
-      {/* Submateri 1 */}
       <div className="subMateri">
         <h3 className="title">1. Karakteristik Arus Bolak-Balik</h3>
         <p>
@@ -22,7 +20,6 @@ const App = () => {
         </p>
       </div>
 
-      {/* Submateri 2 */}
       <div className="subMateri">
         <h3 className="title">2. Rangkaian RLC pada Arus Bolak-Balik</h3>
         <p>
@@ -41,8 +38,6 @@ const App = () => {
           Pada rangkaian <b>paralel</b>, komponen-komponen terhubung secara paralel, dan impedansi total dihitung dengan rumus: <b>1/Z = 1/R + 1/X<sub>L</sub> + 1/X<sub>C</sub></b>.
         </p>
       </div>
-
-      {/* Submateri 3 */}
       <div className="subMateri">
         <h3 className="title">3. Daya pada Rangkaian AC</h3>
         <p>
@@ -55,7 +50,7 @@ const App = () => {
         </p>
       </div>
     </div>
-  );
+);
 };
 
 export default App;
