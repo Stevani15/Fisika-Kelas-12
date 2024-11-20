@@ -1,10 +1,10 @@
 import React from "react";
-import "./Ac.css";
+import "../AC.css";
 
 const RangkaianArusBolakBalik= () => {
   return (
     <div className="container">
-      <h2>Ringkasan Materi: Arus Bolak-Balik (AC)</h2>
+      <h2>Arus Bolak-Balik (AC)</h2>
       <p>
         Arus bolak-balik adalah arus listrik yang besar dan arah alirannya berubah secara periodik. Arus ini banyak digunakan dalam berbagai aplikasi, seperti listrik rumah tangga dan perangkat elektronik.
       </p>
