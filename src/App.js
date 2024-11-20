@@ -34,6 +34,12 @@ function App() {
             to="/SumberEnergi" 
             style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}
           >
+            AC
+            </Link>
+            <Link 
+            to="AC"
+            style={{margin: '0 10px', color: '#fff', textDecoration: 'none'}}
+            >
             Sumber Energi
           </Link>
           <Link 
