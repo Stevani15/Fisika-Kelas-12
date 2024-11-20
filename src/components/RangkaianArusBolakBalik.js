@@ -121,7 +121,7 @@ function RangkaianArusBolakbalik() {
 <div className="col-md-4 d-flex justify-content-center">
             <img
               src="https://circuitdigest.com/sites/default/files/projectimage_tut/What-is-AC-circuit_0.png"
-              alt="Michael Faraday
+            alt="Michael Faraday
               className="img-fluid rounded
             />
           </div>
