@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "../AC.css";
 
-function AC() {
+function RangkaianArusBolakBalik() {
   const [answers, setAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
@@ -46,7 +47,6 @@ function AC() {
 
   return (
     <div className="container mt-4">
-      {/* Bagian Teori */}
       <h2>Arus Bolak-Balik (AC)</h2>
       <p>
         Arus bolak-balik (AC) adalah arus listrik yang berubah arah secara
