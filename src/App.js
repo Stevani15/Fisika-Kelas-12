@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Form } from 'react-router-dom';
 import HomePage from './components/HomePage'; // Impor file HomePage
 import './components/HomePage.css';
+import AC from "./components/AC";
 import MedanMagnetik from './components/MedanMagnetik'; // Impor halaman Medan Magnetik
 import SumberEnergi from './components/SumberEnergi';
 import FisikaModern from './components/FisikaModern';
