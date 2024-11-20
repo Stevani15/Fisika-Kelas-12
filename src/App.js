@@ -16,7 +16,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Navigation Bar */}
         <nav style={{ padding: '10px', background: '#333', color: '#fff' }}>
           <Link 
             to="/" 
@@ -28,18 +27,19 @@ function App() {
             to="/MedanMagnetik" 
             style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}
           >
+           AC
+            </Link>
+            <Link 
+            to="AC"
+            style={{margin: '0 10px', color: '#fff', textDecoration: 'none'}}
+            >
             Medan Magnetik
           </Link>
           <Link 
             to="/SumberEnergi" 
             style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}
           >
-            AC
-            </Link>
-            <Link 
-            to="AC"
-            style={{margin: '0 10px', color: '#fff', textDecoration: 'none'}}
-            >
+          
             Sumber Energi
           </Link>
           <Link 
@@ -85,6 +85,7 @@ function App() {
           {/* Route untuk Homepage */}
           <Route path="/" element={<HomePage />} />
           {/* Route untuk Halaman Medan Magnetik */}
+          <Route path="/AC" element={<AC />} />
           <Route path="/MedanMagnetik" element={<MedanMagnetik />} />
           <Route path="/SumberEnergi" element={<SumberEnergi />} />
           <Route path="/TeknologiDigital" element={<TeknologiDigital />} />
