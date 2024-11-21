@@ -191,7 +191,6 @@ Dengan B sama dengan rapat fluks magnetik, yaitu banyaknya fluks garis gaya magn
       </div>
       </ul>
     </div>
-  );
-};
+  );};
 
 export default InduksiElektromagnetik;
