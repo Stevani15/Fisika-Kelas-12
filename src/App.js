@@ -10,16 +10,13 @@ function App() {
       <div className="App">
         {/* Navigation Bar */}
         <nav style={{ padding: '10px', background: '#333', color: '#fff' }}>
-          <Link 
-            to="/" 
+          <Link to="/" 
             style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}
           >
             Home
           </Link>
-          <Link 
-            to="/MedanMagnetik" 
-            style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}
-          >
+          <Link to="/MedanMagnetik" 
+            style={{ margin: '0 10px', color: '#fff', textDecoration: 'none' }}  >
             Medan Magnetik
           </Link>
         </nav>
