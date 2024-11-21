@@ -104,140 +104,143 @@ function RangkaianArusBolakbalik() {
   const feedbackMessage =
     score === totalQuestions
       ? "Selamat! Anda menjawab semua pertanyaan dengan benar!"
-      : score > totalQuestions / 2
-      ? "Bagus! Anda sudah memahami sebagian besar materi."
-      : "Coba lagi! Pelajari lebih dalam konsepnya.";
+      : score > totalQuestions 
+        ? "Bagus! Anda sudah memahami sebagian besar materi."
+        : "Coba lagi! Pelajari lebih dalam konsepnya.";
 
-  return (    <div>
+  return (
+    <div>
       <div className="container mt-4">
-      <h2>Arus Bolak-Balik (AC)</h2>
-<p>
-  Arus bolak-balik (AC) adalah arus listrik yang berubah arah secara periodik. 
-  Arus ini digunakan dalam jaringan listrik rumah tangga dan banyak aplikasi 
-  industri karena efisiensinya dalam transmisi daya pada jarak jauh. 
-  Dalam sistem AC, tegangan dan arus memiliki bentuk gelombang sinusoidal yang 
-  dinyatakan dengan persamaan:
-</p>
-<div className="col-md-4 d-flex justify-content-center">
-            <img
-              src="https://circuitdigest.com/sites/default/files/projectimage_tut/What-is-AC-circuit_0.png"
-            alt="AC CIrcuit Diagram
+
+
+        <h2>Arus Bolak-Balik (AC)</h2>
+        <p>
+          Arus bolak-balik (AC) adalah arus listrik yang berubah arah secara periodik.
+          Arus ini digunakan dalam jaringan listrik rumah tangga dan banyak aplikasi
+          industri karena efisiensinya dalam transmisi daya pada jarak jauh.
+          Dalam sistem AC, tegangan dan arus memiliki bentuk gelombang sinusoidal yang
+          dinyatakan dengan persamaan:
+        </p>
+        <div className="col-md-4 d-flex justify-content-center">
+          <img
+            src="https://circuitdigest.com/sites/default/files/projectimage_tut/What-is-AC-circuit_0.png"
+            alt="AC Circuit Diagram
               className="img-fluid rounded
-            />
-          </div>
-<p>
-  <b>i(t) = I<sub>m</sub> sin(ωt)</b>
-</p>
-<p>
-  Di mana:
-  <ul>
-    <li><b>i(t):</b> Nilai arus sesaat (ampere)</li>
-    <li><b>I<sub>m</sub>:</b> Amplitudo arus maksimum (ampere)</li>
-    <li><b>ω:</b> Kecepatan sudut = 2πf (rad/s), dengan f adalah frekuensi (Hz)</li>
-    <li><b>t:</b> Waktu (s)</li>
-  </ul>
-</p>
+          />
+        </div>
+        <p>
+          <b>i(t) = I<sub>m</sub> sin(ωt)</b>
+        </p>
+        <p>
+          Di mana:
+          <ul>
+            <li><b>i(t):</b> Nilai arus sesaat (ampere)</li>
+            <li><b>I<sub>m</sub>:</b> Amplitudo arus maksimum (ampere)</li>
+            <li><b>ω:</b> Kecepatan sudut = 2πf (rad/s), dengan f adalah frekuensi (Hz)</li>
+            <li><b>t:</b> Waktu (s)</li>
+          </ul>
+        </p>
 
-<h4>Komponen dalam Rangkaian AC</h4>
-<p>
-  Rangkaian AC dapat terdiri dari resistor (R), induktor (L), dan kapasitor (C). 
-  Setiap komponen memiliki sifat yang berbeda:
-</p>
-<ul>
-  <li>
-    <b>Resistor (R):</b> Mengubah energi listrik menjadi panas tanpa memengaruhi 
-    frekuensi arus. Arus dan tegangan dalam resistor berada dalam fase yang sama.
-  </li>
-  <li>
-    <b>Induktor (L):</b> Menghasilkan reaktansi induktif (X<sub>L</sub>) yang 
-    sebanding dengan frekuensi arus (f). Dalam induktor, arus tertinggal (lagging) terhadap tegangan sebesar 90°.
-  </li>
-  <li>
-    <b>Kapasitor (C):</b> Menghasilkan reaktansi kapasitif (X<sub>C</sub>) yang berbanding terbalik dengan frekuensi. 
-    Dalam kapasitor, arus mendahului (leading) tegangan sebesar 90°.
-  </li>
-</ul>
+        <h4>Komponen dalam Rangkaian AC</h4>
+        <p>
+          Rangkaian AC dapat terdiri dari resistor (R), induktor (L), dan kapasitor (C).
+          Setiap komponen memiliki sifat yang berbeda:
+        </p>
+        <ul>
+          <li>
+            <b>Resistor (R):</b> Mengubah energi listrik menjadi panas tanpa memengaruhi
+            frekuensi arus. Arus dan tegangan dalam resistor berada dalam fase yang sama.
+          </li>
+          <li>
+            <b>Induktor (L):</b> Menghasilkan reaktansi induktif (X<sub>L</sub>) yang
+            sebanding dengan frekuensi arus (f). Dalam induktor, arus tertinggal (lagging) terhadap tegangan sebesar 90°.
+          </li>
+          <li>
+            <b>Kapasitor (C):</b> Menghasilkan reaktansi kapasitif (X<sub>C</sub>) yang berbanding terbalik dengan frekuensi.
+            Dalam kapasitor, arus mendahului (leading) tegangan sebesar 90°.
+          </li>
+        </ul>
 
-<h4>Rumus Penting</h4>
-<ul>
-  <li>
-    Reaktansi Induktif:
-    <b>X<sub>L</sub> = 2πfL</b>
-  </li>
-  <li>
-    Reaktansi Kapasitif:
-    <b>X<sub>C</sub> = 1 / (2πfC)</b>
-  </li>
-  <li>
-    Impedansi (Z) dalam Rangkaian Seri:
-    <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>
-  </li>
-  <li>
-    Arus Efektif:
-    <b>I<sub>rms</sub> = V<sub>rms</sub> / Z</b>
-  </li>
-</ul>
+        <h4>Rumus Penting</h4>
+        <ul>
+          <li>
+            Reaktansi Induktif:
+            <b>X<sub>L</sub> = 2πfL</b>
+          </li>
+          <li>
+            Reaktansi Kapasitif:
+            <b>X<sub>C</sub> = 1 / (2πfC)</b>
+          </li>
+          <li>
+            Impedansi (Z) dalam Rangkaian Seri:
+            <b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b>
+          </li>
+          <li>
+            Arus Efektif:
+            <b>I<sub>rms</sub> = V<sub>rms</sub> / Z</b>
+          </li>
+        </ul>
 
-<h4>Teori Arus Efektif (I<sub>rms</sub>)</h4>
-<p>
-  Arus efektif (I<sub>rms</sub>) adalah nilai arus yang menghasilkan daya yang sama seperti arus searah pada 
-  beban resistif yang sama. Untuk arus bolak-balik yang berbentuk sinusoidal, arus efektif adalah 
-  nilai akar kuadrat rata-rata dari kuadrat arus sesaat, dan dihitung dengan rumus:
-</p>
-<ul>
-  <li><b>I<sub>rms</sub> = I<sub>m</sub> / √2</b></li>
-</ul>
-<p>
-  Nilai I<sub>rms</sub> ini penting untuk menentukan daya yang dapat disuplai oleh sumber AC kepada beban. 
-  Pada sistem AC, banyak perhitungan daya yang menggunakan nilai arus efektif, terutama untuk peralatan yang membutuhkan 
-  pengukuran daya yang akurat, seperti motor listrik dan alat-alat elektronik.
-</p>
+        <h4>Teori Arus Efektif (I<sub>rms</sub>)</h4>
+        <p>
+          Arus efektif (I<sub>rms</sub>) adalah nilai arus yang menghasilkan daya yang sama seperti arus searah pada
+          beban resistif yang sama. Untuk arus bolak-balik yang berbentuk sinusoidal, arus efektif adalah
+          nilai akar kuadrat rata-rata dari kuadrat arus sesaat, dan dihitung dengan rumus:
+        </p>
+        <ul>
+          <li><b>I<sub>rms</sub> = I<sub>m</sub> / √2</b></li>
+        </ul>
+        <p>
+          Nilai I<sub>rms</sub> ini penting untuk menentukan daya yang dapat disuplai oleh sumber AC kepada beban.
+          Pada sistem AC, banyak perhitungan daya yang menggunakan nilai arus efektif, terutama untuk peralatan yang membutuhkan
+          pengukuran daya yang akurat, seperti motor listrik dan alat-alat elektronik.
+        </p>
 
-<h4>Teori Impedansi dalam Rangkaian AC</h4>
-<p>
-  Impedansi (Z) adalah ukuran terhadap hambatan total dalam rangkaian AC, yang mencakup efek resistansi (R), 
-  reaktansi induktif (X<sub>L</sub>), dan reaktansi kapasitif (X<sub>C</sub>). Impedansi dapat dihitung dengan rumus:
-</p>
-<ul>
-  <li><b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b></li>
-</ul>
-<p>
-  Impedansi mempengaruhi besar arus yang mengalir dalam rangkaian AC. Semakin besar impedansi, semakin kecil arus yang 
-  mengalir. Dalam rangkaian AC, nilai impedansi bergantung pada jenis komponen yang ada (R, L, C) serta frekuensi sumber AC.
-  Impedansi berfungsi seperti hambatan pada arus searah, namun untuk arus bolak-balik, impedansi tidak hanya bergantung pada 
-  nilai resistansi, tetapi juga pada sifat induktif dan kapasitif rangkaian.
-</p>
+        <h4>Teori Impedansi dalam Rangkaian AC</h4>
+        <p>
+          Impedansi (Z) adalah ukuran terhadap hambatan total dalam rangkaian AC, yang mencakup efek resistansi (R),
+          reaktansi induktif (X<sub>L</sub>), dan reaktansi kapasitif (X<sub>C</sub>). Impedansi dapat dihitung dengan rumus:
+        </p>
+        <ul>
+          <li><b>Z = √(R² + (X<sub>L</sub> - X<sub>C</sub>)²)</b></li>
+        </ul>
+        <p>
+          Impedansi mempengaruhi besar arus yang mengalir dalam rangkaian AC. Semakin besar impedansi, semakin kecil arus yang
+          mengalir. Dalam rangkaian AC, nilai impedansi bergantung pada jenis komponen yang ada (R, L, C) serta frekuensi sumber AC.
+          Impedansi berfungsi seperti hambatan pada arus searah, namun untuk arus bolak-balik, impedansi tidak hanya bergantung pada
+          nilai resistansi, tetapi juga pada sifat induktif dan kapasitif rangkaian.
+        </p>
 
-<p>
-  Dalam dunia nyata, penggunaan rangkaian AC mencakup pengaturan motor listrik, 
-  pencahayaan rumah tangga, dan peralatan elektronik. Pemahaman tentang arus 
-  efektif dan impedansi membantu merancang perangkat yang efisien dan aman.
-</p>
+        <p>
+          Dalam dunia nyata, penggunaan rangkaian AC mencakup pengaturan motor listrik,
+          pencahayaan rumah tangga, dan peralatan elektronik. Pemahaman tentang arus
+          efektif dan impedansi membantu merancang perangkat yang efisien dan aman.
+        </p>
 
-<p>
-  Salah satu keuntungan besar dari penggunaan arus bolak-balik adalah kemampuannya 
-  untuk ditransmisikan melalui jaringan dengan kehilangan daya yang lebih kecil. 
-  Hal ini dikarenakan tegangan AC dapat dengan mudah dinaikkan atau diturunkan menggunakan 
-  transformator. Proses ini memungkinkan distribusi listrik dari pembangkit hingga ke 
-  konsumen dengan efisiensi yang tinggi, mengurangi biaya transmisi.
-</p>
+        <p>
+          Salah satu keuntungan besar dari penggunaan arus bolak-balik adalah kemampuannya
+          untuk ditransmisikan melalui jaringan dengan kehilangan daya yang lebih kecil.
+          Hal ini dikarenakan tegangan AC dapat dengan mudah dinaikkan atau diturunkan menggunakan
+          transformator. Proses ini memungkinkan distribusi listrik dari pembangkit hingga ke
+          konsumen dengan efisiensi yang tinggi, mengurangi biaya transmisi.
+        </p>
 
-<p>
-  Arus bolak-balik juga mempermudah penggunaan peralatan elektronik yang memiliki 
-  berbagai aplikasi, mulai dari pengoperasian mesin industri hingga perangkat rumah tangga. 
-  Salah satu hal yang perlu diperhatikan dalam desain rangkaian AC adalah faktor-faktor 
-  yang mempengaruhi kualitas daya listrik, seperti faktor daya (power factor), yang menunjukkan 
-  seberapa efisien daya digunakan dalam rangkaian tersebut.
-</p>
+        <p>
+          Arus bolak-balik juga mempermudah penggunaan peralatan elektronik yang memiliki
+          berbagai aplikasi, mulai dari pengoperasian mesin industri hingga perangkat rumah tangga.
+          Salah satu hal yang perlu diperhatikan dalam desain rangkaian AC adalah faktor-faktor
+          yang mempengaruhi kualitas daya listrik, seperti faktor daya (power factor), yang menunjukkan
+          seberapa efisien daya digunakan dalam rangkaian tersebut.
+        </p>
 
-<p>
-  Ketika faktor daya mendekati 1, artinya hampir seluruh daya yang disuplai ke rangkaian 
-  digunakan dengan efisien. Sebaliknya, jika faktor daya rendah, sebagian besar daya akan 
-  hilang dalam bentuk panas, dan ini dapat menyebabkan pemborosan energi.
-</p>
+        <p>
+          Ketika faktor daya mendekati 1, artinya hampir seluruh daya yang disuplai ke rangkaian
+          digunakan dengan efisien. Sebaliknya, jika faktor daya rendah, sebagian besar daya akan
+          hilang dalam bentuk panas, dan ini dapat menyebabkan pemborosan energi.
+        </p>
 
-<p><i>Sumber: Buku Fisika SMA Kelas 12, Penerbit Erlangga, Bab Arus Bolak-Balik (AC).</i></p>
-        
+        <p><i>Sumber: Buku Fisika SMA Kelas 12, Penerbit Erlangga, Bab Arus Bolak-Balik (AC).</i></p>
+
         <div className="alert alert-info" role="alert">
           <h4 className="alert-heading">Cara Mengerjakan Soal:</h4>
           <ul>
@@ -248,82 +251,82 @@ function RangkaianArusBolakbalik() {
           </ul>
         </div>
         <h4>Pertanyaan {currentQuestion + 1} dari {totalQuestions}</h4>
-              <p><strong dangerouslySetInnerHTML={{ __html: questions[currentQuestion].question }}></strong></p>
-              {questions[currentQuestion].options.map((option, index) => (
-                <div key={index} className="form-check">
-                  <input
-                    type="radio"
-                    id={`question-${currentQuestion}-option-${index}`}
-                    name={`question-${currentQuestion}`}
-                    value={option}
-                    className="form-check-input"
-                    checked={answers[questions[currentQuestion].id] === option}
-                    onChange={() => handleAnswerChange(questions[currentQuestion].id, option)}
-                  />
-                  <label
-                    className="form-check-label"
-                    htmlFor={`question-${currentQuestion}-option-${index}`}
-                  >
-                    {option}
-                  </label>
-                </div>
-              ))}
-              <div className="mt-3">
-                <button
-                  className="btn btn-secondary me-2"
-                  onClick={prevQuestion}
-                  disabled={currentQuestion === 0}
-                >
-                  Sebelumnya
-                </button>
-                <button
-                  className="btn btn-secondary"
-                  onClick={nextQuestion}
-                  disabled={currentQuestion === totalQuestions - 1}
-                >
-                  Selanjutnya
-                </button>
-              </div>
-              {currentQuestion === totalQuestions - 1 && (
-                <button className="btn btn-primary mt-3" onClick={checkAnswers}>
-                  Cek Jawaban
-                </button>
-              )}
-            </div>
-          
-          {showResults && (
-            <div>
-              <h4>Hasil Jawaban</h4>
-              {questions.map((question) => {
-                const isCorrect = answers[question.id] === question.answer;
-                return (
-                  <div key={question.id}>
-                    <p>
-                      <strong dangerouslySetInnerHTML={{ __html: question.question }}></strong>
-                      <br />
-                      Jawaban Anda: <strong>{answers[question.id] || "Belum dijawab"}</strong>
-                      {isCorrect ? (
-                        <span className="text-success ms-2"> Benar!</span>
-                      ) : (
-                        <span className="text-danger ms-2">
-                           Salah. Jawaban yang benar adalah {question.answer}
-                        </span>
-                      )}
-                      <br />
-                      <strong>Penjelasan:</strong>
-                      <p>{question.solution}</p>
-                    </p>
-                  </div>
-                );
-              })}
-              <h5>Skor Anda: {score} dari {totalQuestions}</h5>
-              <p className="text-primary">{feedbackMessage}</p>
-              <button className="btn btn-secondary mt-3" onClick={resetQuiz}>
-                Ulangi Kuis
-              </button>
-            </div>
-          )}
+        <p><strong dangerouslySetInnerHTML={{ __html: questions[currentQuestion].question }}></strong></p>
+        {questions[currentQuestion].options.map((option, index) => (
+          <div key={index} className="form-check">
+            <input
+              type="radio"
+              id={`question-${currentQuestion}-option-${index}`}
+              name={`question-${currentQuestion}`}
+              value={option}
+              className="form-check-input"
+              checked={answers[questions[currentQuestion].id] === option}
+              onChange={() => handleAnswerChange(questions[currentQuestion].id, option)}
+            />
+            <label
+              className="form-check-label"
+              htmlFor={`question-${currentQuestion}-option-${index}`}
+            >
+              {option}
+            </label>
+          </div>
+        ))}
+        <div className="mt-3">
+          <button
+            className="btn btn-secondary me-2"
+            onClick={prevQuestion}
+            disabled={currentQuestion === 0}
+          >
+            Sebelumnya
+          </button>
+          <button
+            className="btn btn-secondary"
+            onClick={nextQuestion}
+            disabled={currentQuestion === totalQuestions - 1}
+          >
+            Selanjutnya
+          </button>
         </div>
+        {currentQuestion === totalQuestions - 1 && (
+          <button className="btn btn-primary mt-3" onClick={checkAnswers}>
+            Cek Jawaban
+          </button>
+        )}
+      </div>
+
+      {showResults && (
+        <div>
+          <h4>Hasil Jawaban</h4>
+          {questions.map((question) => {
+            const isCorrect = answers[question.id] === question.answer;
+            return (
+              <div key={question.id}>
+                <p>
+                  <strong dangerouslySetInnerHTML={{ __html: question.question }}></strong>
+                  <br />
+                  Jawaban Anda: <strong>{answers[question.id] || "Belum dijawab"}</strong>
+                  {isCorrect ? (
+                    <span className="text-success ms-2"> Benar!</span>
+                  ) : (
+                    <span className="text-danger ms-2">
+                      Salah. Jawaban yang benar adalah {question.answer}
+                    </span>
+                  )}
+                  <br />
+                  <strong>Penjelasan:</strong>
+                  <p>{question.solution}</p>
+                </p>
+              </div>
+            );
+          })}
+          <h5>Skor Anda: {score} dari {totalQuestions}</h5>
+          <p className="text-primary">{feedbackMessage}</p>
+          <button className="btn btn-secondary mt-3" onClick={resetQuiz}>
+            Ulangi Kuis
+          </button>
+        </div>
+      )}
+    </div>
 
   );
 }
