@@ -1,5 +1,15 @@
 // src/components/PhysicsMagneticField.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './HomePage.css';
+import './SumberEnergi';
+import './MedanMagnetik';
+import './GelombangElektromagnetik';
+import './InduksiElektromagnetik';
+import './RangkaianArusBolakBalik'
+import './RangkaianArusSearah';
+import './TeknologiDigital';
+import './FisikaModern';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 
 function PhysicsMagneticField() {
@@ -147,6 +157,8 @@ function PhysicsMagneticField() {
         </div>
       )}
     </Container>
+    
+
   );
 }
 
