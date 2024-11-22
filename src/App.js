@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, Form } from 'react-router-dom';
-import HomePage from './components/HomePage'; // Impor file HomePage
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from './components/HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/HomePage.css';
-import MedanMagnetik from './components/MedanMagnetik'; // Impor halaman Medan Magnetik
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import MedanMagnetik from './components/MedanMagnetik'; 
 import SumberEnergi from './components/SumberEnergi';
 import FisikaModern from './components/FisikaModern';
 import GelombangElektromagnetik from './components/GelombangElektromagnetik';
