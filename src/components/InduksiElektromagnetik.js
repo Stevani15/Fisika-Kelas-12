@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const InduksiElektromagnetik = () => {
   // State untuk kuis
   const [quizAnswer, setQuizAnswer] = useState('');
   const [feedback, setFeedback] = useState('');
-
   // Fungsi untuk menangani jawaban kuis
   const handleQuizSubmit = () => {
     if (quizAnswer === 'A') {
@@ -14,11 +12,9 @@ const InduksiElektromagnetik = () => {
       setFeedback('Jawaban Anda salah. Coba lagi!');
     }
   };
-
   return (
     <div className="container mt-8">
       <h1 className="text-center mb-5">A.Induksi Elektromagnetik</h1>
-
       {/* Gambar dengan ukuran diperkecil */}
       <div className="text-center">
         <img 
@@ -28,7 +24,6 @@ const InduksiElektromagnetik = () => {
           style={{ maxWidth: '50%' }} 
         />
       </div>
-
       <p>
       Induksi elektromagnetik adalah gejala timbulnya arus listrik pada penghantar listrik akibat dari adanya perubahan medan magnet di sekeliling penghantar. Konsep induksi elektromagnetik didasarkan dari penemuan Michael Faraday dan Joseph Henry pada 1831. Perubahan medan magnetik menghasilkan beda potensial yang disebut gaya gerak listrik induksi dan arus listrik yang ditimbulkannya disebut arus listrik induksi.
       </p>
@@ -141,7 +136,6 @@ Dengan B sama dengan rapat fluks magnetik, yaitu banyaknya fluks garis gaya magn
           {feedback}
         </div>
       )}
-
 <h1 className="text-center mb-5">D.Aplikasi Induksi Elektromagnetik</h1>
       <p>Berikut adalah beberapa aplikasi penting dari induksi elektromagnetik:</p>
       <ul>
@@ -192,5 +186,4 @@ Dengan B sama dengan rapat fluks magnetik, yaitu banyaknya fluks garis gaya magn
       </ul>
     </div>
   );};
-
 export default InduksiElektromagnetik;
