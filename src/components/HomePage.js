@@ -11,7 +11,6 @@ import './TeknologiDigital';
 import './FisikaModern';
 import './FAQ';
 
-<<<<<<< HEAD
 function HomePage() {
     return (
         <div className="homepage">
@@ -72,7 +71,6 @@ function HomePage() {
         </div>
     );
 }
-=======
 const HomePage = () => {
   // Daftar kategori materi 
   const kategori = [
@@ -110,4 +108,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
->>>>>>> 7f7de838b36631c377aacfc03f70eb10a2d3e600
