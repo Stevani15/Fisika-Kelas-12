@@ -12,8 +12,6 @@
   line-height: 1.6;
   word-wrap: break-word;
 }
-
-/* Optional: Add smooth scroll for overflow sections */
 .content-container {
   max-height: none; 
   overflow-y: auto;
