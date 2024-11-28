@@ -17,6 +17,17 @@ const kategori = [
 ];
 
 function HomePage() {
+    const topics = [
+        { title: "Rangkaian Arus Searah", subBab: 3, link: "/RangkaianArusSearah" },
+        { title: "Gelombang Elektromagnetik", subBab: 3, link: "/GelombangElektromagnetik" },
+        { title: "Medan Magnetik", subBab: 3, link: "/MedanMagnetik" },
+        { title: "Induksi Elektromagnetik", subBab: 2, link: "/InduksiElektromagnetik" },
+        { title: "Rangkaian Arus Bolak-Balik", subBab: 3, link: "/RangkaianArusBolakBalik" },
+        { title: "Fisika Modern", subBab: 3, link: "/FisikaModern" },
+        { title: "Teknologi Digital", subBab: 3, link: "/TeknologiDigital" },
+        { title: "Sumber Energi", subBab: 4, link: "/SumberEnergi" },
+    ];
+
     return (
         <div className="home-container">
             <header className="header">
@@ -34,12 +45,17 @@ function HomePage() {
 
             <main className="main-content">
                 <section className="subject-card">
-                    <h2>FISIKA</h2>
-                    <p>12 MIA SMA | 8 Materi</p>
+                    {/* Subject Info */}
+                    <h2 className="subject-title">FISIKA</h2>
+                    <p className="subject-info">12 MIA SMA | 8 Materi</p>
+                    
+                    {/* Actions Section */}
                     <div className="actions">
                         <button className="write-review">Tulis Ulasan</button>
                         <button className="add-favorite">Tambah Ke Favorit</button>
                     </div>
+
+                    {/* Topics List */}
                     <div className="topics">
                         <div className="category-list">
                             {kategori.map((item, index) => (
