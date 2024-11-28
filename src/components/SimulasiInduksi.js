@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const SimulasiInduksi = () => {
   const [flux, setFlux] = useState(0);
   const [coilTurns, setCoilTurns] = useState(10);
