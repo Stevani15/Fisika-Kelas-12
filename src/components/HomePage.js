@@ -152,7 +152,7 @@ const HomePage = () => {
 
     {/* Main Content */}
 <main className="main-content">
-  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh aplikasi, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
+  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh soal, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
 
   <div className="topics">
     <div className="topic-card">
