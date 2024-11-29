@@ -4,6 +4,7 @@ import HomePage from './components/HomePage'; // Pastikan path ini benar
 import Bab1 from './components/Bab1'; // Pastikan path ini benar
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+
 function App() {
   return (
     <Router>
