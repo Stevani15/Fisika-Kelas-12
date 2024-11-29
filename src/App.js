@@ -11,7 +11,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bab1" element={<Bab1 />} />
-        <Route path="/bab2" element={<Bab2 />} />
 
       </Routes>
     </Router>
