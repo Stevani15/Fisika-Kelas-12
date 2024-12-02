@@ -13,6 +13,7 @@ import InduksiElektromagnetik from './components/InduksiElektromagnetik';
 import RangkaianArusSearah from './components/RangkaianArusSearah';
 import RangkaianArusBolakBalik from './components/RangkaianArusBolakBalik';
 import TeknologiDigital from './components/TeknologiDigital';
+
 function App() {
   return (
     <Router>
@@ -36,6 +37,7 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
+                {/* Menu navigasi */}
                 <li className="nav-item">
                   <Link className="nav-link" to="/MedanMagnetik">Medan Magnetik</Link>
                 </li>
@@ -63,14 +65,12 @@ function App() {
               </ul>
             </div>
           </div>
-        </nav>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/bab1" element={<Bab1 />} />
+        </nav>       
 
         {/* Routes untuk halaman */}
         <div className="container mt-4">
           <Routes>
+            {/* Halaman Utama */}
             <Route path="/" element={<HomePage />} />
             <Route path="/MedanMagnetik" element={<MedanMagnetik />} />
             <Route path="/SumberEnergi" element={<SumberEnergi />} />
@@ -86,4 +86,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
