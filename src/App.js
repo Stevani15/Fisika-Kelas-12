@@ -13,11 +13,9 @@ import InduksiElektromagnetik from './components/InduksiElektromagnetik';
 import RangkaianArusSearah from './components/RangkaianArusSearah';
 import RangkaianArusBolakBalik from './components/RangkaianArusBolakBalik';
 import TeknologiDigital from './components/TeknologiDigital';
-
 function App() {
   return (
     <Router>
-<<<<<<< HEAD
       <div className="App">
         {/* Navigation Bar */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -66,11 +64,9 @@ function App() {
             </div>
           </div>
         </nav>
-=======
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bab1" element={<Bab1 />} />
->>>>>>> eb2177420c0a8fc25c11143890216f1671aaa5e9
 
         {/* Routes untuk halaman */}
         <div className="container mt-4">
@@ -90,5 +86,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
