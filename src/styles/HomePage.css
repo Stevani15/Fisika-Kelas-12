@@ -9,6 +9,7 @@
     padding: 50px;
   }
   
+
   .homepage-logo {
     width: 100px;
     margin-bottom: 20px;
@@ -56,7 +57,7 @@
   .logo-img {
     width: 50px; /* Lebar logo */
     height: 50px; /* Tinggi logo */
-    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    border-radius: 80%; /* Membuat logo berbentuk lingkaran */
   }
   
     /* Main content styles */
@@ -139,6 +140,11 @@
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   }
   
+  .topic-card h2{
+    color: #007bff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
   .topic-card h3 {
     color: #4CAF50;
     font-size: 18px;
@@ -159,4 +165,34 @@
     margin-top: 20px;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
+/*ikon*/
+  .text-white {
+    color: white !important;
+  }
+  .mx-2 {
+    margin: 0 8px !important;
+  }
+
+  /*title*/
+  /* Pastikan tidak mengubah elemen lain */
+.title-container {
+  display: flex; /* Agar fleksibel jika ingin menambahkan elemen lain */
+  justify-content: center; /* Rata tengah secara horizontal */
+  align-items: center; /* Rata tengah secara vertikal */
+  margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.homepage-title {
+  font-family: 'Poppins', sans-serif; /* Gunakan font modern */
+  font-size: 36px; /* Ukuran font besar */
+  font-weight: bold; /* Teks tebal */
+  color: #333; /* Warna teks abu gelap */
+  background-color: #f0f0f0; /* Warna latar belakang */
+  padding: 10px 20px; /* Jarak dalam elemen */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  text-align: center; /* Teks rata tengah */
+  line-height: 1.5; /* Jarak antar baris */
+}
+
