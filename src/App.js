@@ -12,11 +12,10 @@ function App() {
   return (
     <Router>
         <Routes>
-    
-        <Route path="/" element={<RangkaianArusBolakBalik />} />
+        {/* Halaman Utama */}
+        <Route path="/" element={<HomePage />} />
 
-        {/* Halaman Bab 1 */}
-        <Route path="/bab1" element={<Bab1 />} />
+        <Route path="/RangkaianArusBolakBalik" element={<RangkaianArusBolakBalik />} />
       </Routes>
     </Router>
   );
