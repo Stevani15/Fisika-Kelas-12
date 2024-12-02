@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import "../styles/HomePage.css";
+import "./HomePage.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -59,27 +58,27 @@ const HomePage = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-              <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >
-              Materi
-            </a>
-            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-            <Link to="/Bab1" className="dropdown-item">
-            Bab.1
-            </Link>
-            </li>
-            <li>
-            <Link to="/bab2" className="dropdown-item">
-            Bab.2
-          </Link>
-          </li>
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                         Materi
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link to="/Bab1" className="dropdown-item">
+                      Bab.1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/bab2" className="dropdown-item">
+                      Bab.2
+                    </Link>
+                  </li>
                   <li>
                     <Link to="/bab3" className="dropdown-item">
                       Bab.3
@@ -112,7 +111,7 @@ const HomePage = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
+               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Pelajaran
                 </a>
@@ -203,7 +202,7 @@ const HomePage = () => {
 
  {/* Footer */}
  <footer className="footer">
-   <p>© 2024 Fisika Interactive | Built with ❤</p>
+   <p>© 2024 Fisika Interactive | Built with ❤️</p>
  </footer>
 </div>
 
