@@ -1,61 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './HomePage.css';
+import { Link } from 'react-router-dom'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./HomePage.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-function HomePage() {
-    const topics = [
-        { title: "Rangkaian Arus Searah", subBab: 3, link: "/RangkaianArusSearah" },
-        { title: "Gelombang Elektromagnetik", subBab: 3, link: "/GelombangElektromagnetik" },
-        { title: "Medan Magnetik", subBab: 3, link: "/MedanMagnetik" },
-        { title: "Induksi Elektromagnetik", subBab: 2, link: "/InduksiElektromagnetik" },
-        { title: "Rangkaian Arus Bolak-Balik", subBab: 3, link: "/RangkaianArusBolakBalik" },
-        { title: "Fisika Modern", subBab: 3, link: "/FisikaModern" },
-        { title: "Teknologi Digital", subBab: 3, link: "/TeknologiDigital" },
-        { title: "Sumber Energi", subBab: 4, link: "/SumberEnergi" },
-    ];
 
-    return (
-        <div className="homepage">
-            {/* Header */}
-            <header className="header">
-                <div className="header-container">
-                    <img src="FISIKA.jpg" alt="Logo Fisika" className="logo" />
-                    <nav className="nav">
-                        <a href="#home" className="nav-link">Beranda</a>
-                        <a href="#faq" className="nav-link">FAQ</a>
-                        <button className="login-button">Login</button>
-                    </nav>
-                </div>
-            </header>
-
-            {/* Main Content */}
-            <main className="main-content">
-                <section className="subject-card">
-                    {/* Subject Info */}
-                    <h2 className="subject-title">FISIKA</h2>
-                    <p className="subject-info">12 MIA SMA | 8 Materi</p>
-                    
-                    {/* Actions Section */}
-                    <div className="actions">
-                        <button className="write-review">Tulis Ulasan</button>
-                        <button className="add-favorite">Tambah Ke Favorit</button>
-                    </div>
-
-                    {/* Topics List */}
-                    <div className="topics">
-                        {topics.map((topic, index) => (
-                            <div className="topic-card" key={index}>
-                                <h3 className="topic-title">{topic.title}</h3>
-                                <p className="topic-info">{topic.subBab} Sub Bab Materi</p>
-                                <Link to={topic.link} className="topic-link">Buka Materi</Link>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            </main>
-        </div>
-    );
-    {
 const HomePage = () => {
   return (
     <div>
@@ -68,7 +17,7 @@ const HomePage = () => {
               alt="Logo"
               className="logo-img me-3" 
             />
-            <h1 className="m-0">Fisika kelas 12</h1>
+            <h1 className="m-0">Fisika</h1>
           </div>
           <div>
             <a href="#" className="text-white mx-2">
@@ -117,7 +66,7 @@ const HomePage = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Materi
+                         Materi
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -162,7 +111,7 @@ const HomePage = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
+               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Pelajaran
                 </a>
@@ -192,51 +141,58 @@ const HomePage = () => {
         <div className="row">
           <div className="col-md-8">
             <div className="p-4 bg-white shadow-sm">
-              <h6 className="text-muted">Fisika</h6>
-              <h2 className="fw-bold">
-                Materi Pelajaran Fisika Kelas 12 SMA
-              </h2>
             </div>
           </div>
         </div>
+      </div>
+      <div className="title-container">
+        <h1 className="homepage-title">Materi Pelajaran Fisika Kelas 12 SMA</h1>
       </div>
 
 
 
     {/* Main Content */}
 <main className="main-content">
-  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh soal, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
+  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh aplikasi, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
 
   <div className="topics">
-    <div className="topic-card">
-      <h3>Medan Magnetik</h3>
-      <p>Penjelasan tentang medan magnetik dan aplikasinya.</p>
-    </div>
-    <div className="topic-card">
-      <h3>Sumber Energi</h3>
-      <p>Pelajari sumber energi yang digunakan dalam kehidupan sehari-hari.</p>
-    </div>
-    <div className="topic-card">
-      <h3>Teknologi Digital</h3>
-      <p>Eksplorasi bagaimana fisika diterapkan dalam teknologi digital.</p>
-    </div>
-    <div className="topic-card">
-      <h3>Fisika Modern</h3>
-      <p>Konsep fisika modern, seperti relativitas dan mekanika kuantum.</p>
-    </div>
-    <div className="topic-card">
-      <h3>Rangkaian Arus Bolak Balik</h3>
-      <p>Dasar-dasar rangkaian listrik arus bolak-balik.</p>
-    </div>
-    <div className="topic-card">
+  <div className="topic-card">
+      <h2>Bab 1</h2>
       <h3>Induksi Elektromagnetik</h3>
       <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
     </div>
     <div className="topic-card">
+    <h2>Bab 2</h2>
+      <h3>Medan Magnetik</h3>
+      <p>Penjelasan tentang medan magnetik dan aplikasinya.</p>
+    </div>
+    <div className="topic-card">
+    <h2>Bab 3</h2>
+      <h3>Sumber Energi</h3>
+      <p>Pelajari sumber energi yang digunakan dalam kehidupan sehari-hari.</p>
+    </div>
+    <div className="topic-card">
+    <h2>Bab 4</h2>
+      <h3>Teknologi Digital</h3>
+      <p>Eksplorasi bagaimana fisika diterapkan dalam teknologi digital.</p>
+    </div>
+    <div className="topic-card">
+    <h2>Bab 5</h2>
+      <h3>Fisika Modern</h3>
+      <p>Konsep fisika modern, seperti relativitas dan mekanika kuantum.</p>
+    </div>
+    <div className="topic-card">
+    <h2>Bab 6</h2>
+      <h3>Rangkaian Arus Bolak Balik</h3>
+      <p>Dasar-dasar rangkaian listrik arus bolak-balik.</p>
+    </div>
+    <div className="topic-card">
+    <h2>Bab 7</h2>
       <h3>Rangkaian Arus Searah</h3>
       <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
     </div>
     <div className="topic-card">
+    <h2>Bab 8</h2>
       <h3>Gelombang Elektromagnetik</h3>
       <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
     </div>
@@ -252,7 +208,5 @@ const HomePage = () => {
 
   );
 };
-    };
-  };
 
 export default HomePage;
