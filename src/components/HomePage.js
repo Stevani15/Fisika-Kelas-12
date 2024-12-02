@@ -55,11 +55,7 @@ function HomePage() {
             </main>
         </div>
     );
-}
-import { Link } from 'react-router-dom'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "../styles/HomePage.css";
-
+    {
 const HomePage = () => {
   return (
     <div>
@@ -256,5 +252,7 @@ const HomePage = () => {
 
   );
 };
+    };
+  };
 
 export default HomePage;
