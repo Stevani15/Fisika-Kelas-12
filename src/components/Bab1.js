@@ -1,5 +1,5 @@
 import React from "react";
-import './Bab1.css';
+import '../styles/Bab.css';
 import { Link } from "react-router-dom";
 import gbdsimages from '../images/induksi.jpg';
 import gbrsimages from '../images/faraday.jpg';
