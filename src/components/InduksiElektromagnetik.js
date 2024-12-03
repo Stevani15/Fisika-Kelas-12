@@ -8,7 +8,7 @@ import gelombangElektromagnetikImage from '../images/gelombang_elektromagnetik.p
 import aplikasiMagnetImage from '../images/aplikasi_magnet.png';
 import transformatorImage from '../images/transformator.png';
 
-function Bab7() {
+function InduksiElektromagnetik() {
     const materiData = [
         {
             nama: "Medan Magnetik",
@@ -78,4 +78,4 @@ function Bab7() {
     );
 }
 
-export default Bab7;
+export default InduksiElektromagnetik;
