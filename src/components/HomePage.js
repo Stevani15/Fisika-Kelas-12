@@ -173,14 +173,6 @@ const HomePage = () => {
       </nav>
 
       {/* Content Section */}
-      <div className="container my-4">
-        <div className="row">
-          <div className="col-md-8">
-            <div className="p-4 bg-white shadow-sm">
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="title-container">
         <h1 className="homepage-title">Materi Pelajaran Fisika Kelas 12 SMA</h1>
       </div>
