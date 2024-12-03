@@ -2,7 +2,6 @@ import React from "react";
 import '../styles/Bab.css'; // Jika Anda memiliki file CSS tambahan
 import { Link } from "react-router-dom";
 import medanMagnetikImage from '../images/medan_magnetik.png';
-import gayaLorentzImage from '../images/gaya_lorentz.png';
 import induksiMagnetikImage from '../images/induksi_magnetik.png';
 import gelombangElektromagnetikImage from '../images/gelombang_elektromagnetik.png';
 import aplikasiMagnetImage from '../images/aplikasi_magnet.png';
@@ -17,13 +16,7 @@ function Bab7() {
             gambar: medanMagnetikImage,
             path: "/materi/medan-magnetik",
         },
-        {
-            nama: "Gaya Lorentz",
-            deskripsi:
-                "Gaya Lorentz adalah gaya yang dialami oleh muatan listrik yang bergerak dalam medan magnet. Materi ini membahas hubungan antara medan listrik, medan magnet, dan kecepatan partikel.",
-            gambar: gayaLorentzImage,
-            path: "/materi/gaya-lorentz",
-        },
+
         {
             nama: "InduksiElektromagnetik",
             deskripsi:

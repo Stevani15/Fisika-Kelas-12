@@ -17,7 +17,6 @@ import Bab8 from './components/Bab8';
 
 // Import halaman materi di Bab 7
 import MedanMagnetik from './components/MedanMagnetik';
-import GayaLorentz from './components/GayaLorentz';
 import InduksiMagnetik from './components/InduksiMagnetik';
 import GelombangElektromagnetik from './components/GelombangElektromagnetik';
 import AplikasiMagnet from './components/AplikasiMagnet';
@@ -51,6 +50,18 @@ function App() {
                                     <Link className="nav-link" to="/bab2">Bab 2</Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link className="nav-link" to="/bab7">Bab 3</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/bab7">Bab 4</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/bab7">Bab 5</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/bab7">Bab 6</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/bab7">Bab 7</Link>
                                 </li>
                             </ul>
@@ -70,10 +81,8 @@ function App() {
                     <Route path="/bab6" element={<Bab6 />} />
                     <Route path="/bab7" element={<Bab7 />} />
                     <Route path="/bab8" element={<Bab8 />} />
-
                     {/* Rute untuk materi di Bab 7 */}
                     <Route path="/materi/medan-magnetik" element={<MedanMagnetik />} />
-                    <Route path="/materi/gaya-lorentz" element={<GayaLorentz />} />
                     <Route path="/materi/induksi-magnetik" element={<InduksiMagnetik />} />
                     <Route path="/materi/gelombang-elektromagnetik" element={<GelombangElektromagnetik />} />
                     <Route path="/materi/aplikasi-magnet" element={<AplikasiMagnet />} />
