@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const ArusBolakBalik = () => {
   const [activeSection, setActiveSection] = useState(null);
 

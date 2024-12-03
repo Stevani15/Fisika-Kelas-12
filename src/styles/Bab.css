@@ -121,3 +121,10 @@
       width:100%;
   }
 }
+.section-content {
+  display: none;
+}
+
+.section-content.active {
+  display: block;
+}
