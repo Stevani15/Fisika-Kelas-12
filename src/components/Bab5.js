@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import '../styles/Bab5.css';
-
+import '../styles/Bab.css';
 
 const FisikaModern = () => {
+  // React state to manage which section is active
   const [activeSection, setActiveSection] = useState(null);
 
   const toggleSection = (section) => {
+    // Toggle visibility of the section content when clicked
     if (activeSection === section) {
-      setActiveSection(null); // Hide the content if clicked again
+      setActiveSection(null); // If the section is already open, close it
     } else {
-      setActiveSection(section); // Show the content of the section
+      setActiveSection(section); // Otherwise, open the clicked section
     }
   };
 
