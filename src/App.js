@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/HomePage.css';
+import './styles/HomePage.css'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Import halaman-halaman utama
@@ -19,9 +19,9 @@ import Bab8 from './components/Bab8';
 import MedanMagnetik from './components/MedanMagnetik';
 import InduksiMagnetik from './components/InduksiMagnetik';
 import GelombangElektromagnetik from './components/GelombangElektromagnetik';
-import AplikasiMagnet from './components/AplikasiMagnet';
-import Transformator from './components/Transformator';
 import InduksiElektromagnetik from './components/InduksiElektromagnetik';
+import AplikasiMagnetDalamKehidupan from './components/AplikasiMagnetDalamKehidupan'; // Nama komponen disesuaikan
+
 function App() {
     return (
         <Router>
@@ -50,19 +50,22 @@ function App() {
                                     <Link className="nav-link" to="/bab2">Bab 2</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/bab7">Bab 3</Link>
+                                    <Link className="nav-link" to="/bab3">Bab 3</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/bab7">Bab 4</Link>
+                                    <Link className="nav-link" to="/bab4">Bab 4</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/bab7">Bab 5</Link>
+                                    <Link className="nav-link" to="/bab5">Bab 5</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/bab7">Bab 6</Link>
+                                    <Link className="nav-link" to="/bab6">Bab 6</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/bab7">Bab 7</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/bab8">Bab 8</Link>
                                 </li>
                             </ul>
                         </div>
@@ -81,13 +84,13 @@ function App() {
                     <Route path="/bab6" element={<Bab6 />} />
                     <Route path="/bab7" element={<Bab7 />} />
                     <Route path="/bab8" element={<Bab8 />} />
+
                     {/* Rute untuk materi di Bab 7 */}
-                    <Route path="/materi/medan-magnetik" element={<MedanMagnetik />} />
-                    <Route path="/materi/induksi-magnetik" element={<InduksiMagnetik />} />
-                    <Route path="/materi/gelombang-elektromagnetik" element={<GelombangElektromagnetik />} />
-                    <Route path="/materi/aplikasi-magnet" element={<AplikasiMagnet />} />
-                    <Route path="/materi/transformator" element={<Transformator />} />
-                    <Route path="/materi/InduksiElektromagnetik" element={<InduksiElektromagnetik/>} />
+                    <Route path="/materi/medanmagnetik" element={<MedanMagnetik />} />
+                    <Route path="/materi/induksimagnetik" element={<InduksiMagnetik />} />
+                    <Route path="/materi/gelombangelektromagnetik" element={<GelombangElektromagnetik />} />
+                    <Route path="/materi/induksielektromagnetik" element={<InduksiElektromagnetik />} />
+                    <Route path="/materi/aplikasimagnetdalamkehidupan" element={<AplikasiMagnetDalamKehidupan />} />
                 </Routes>
             </div>
         </Router>

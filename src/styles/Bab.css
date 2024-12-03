@@ -188,3 +188,71 @@
 .materi-link {
   text-decoration: none;
 }
+.jurusan-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.materi-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;  /* Membuat container lebih lebar */
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1; /* Membuat gambar mengambil sebagian besar ruang */
+  max-width: 50%; /* Membatasi lebar gambar agar tidak terlalu besar */
+  padding-right: 20px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+.materi-image {
+  width: 100%; /* Gambar mengisi lebar container */
+  height: auto;
+}
+
+.text-container {
+  flex: 1; /* Membuat konten teks juga mengisi ruang yang tersisa */
+  padding: 10px;
+  text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+.text-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.text-container h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+pre code {
+  font-size: 1.2rem;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #333;
+}

@@ -1,20 +1,20 @@
 import React from "react";
 import '../styles/Bab.css'; // Pastikan file CSS sudah tersedia
 import { Link } from "react-router-dom";
-import gelombangImage from '../images/gelombang_elektromagnetik.png'; // Gambar utama
+import aplikasiMagnetImage from '../images/aplikasi_magnet.png'; // Gambar utama
 
-function GelombangElektromagnetik() {
+function AplikasiMagnetDalamKehidupan() {
     const materi = {
-        nama: "Gelombang Elektromagnetik",
+        nama: "Aplikasi Magnet dalam Kehidupan",
         deskripsi:
-            "Gelombang elektromagnetik adalah gelombang yang dihasilkan oleh perpaduan medan listrik dan medan magnet yang saling tegak lurus. Gelombang ini memiliki banyak aplikasi dalam kehidupan sehari-hari, seperti komunikasi, radar, dan teknologi medis.",
-        gambar: gelombangImage,
-        path: "/materi/gelombang-elektromagnetik",
+            "Magnet memiliki banyak aplikasi dalam kehidupan sehari-hari, seperti pada kompas, generator listrik, motor, dan MRI di bidang medis. Pelajari lebih dalam bagaimana magnet dimanfaatkan untuk berbagai teknologi modern.",
+        gambar: aplikasiMagnetImage,
+        path: "/materi/aplikasi-magnet",
     };
 
     return (
         <div className="materi-container">
-            <h1 className="text-center">Materi Gelombang Elektromagnetik</h1>
+            <h1 className="text-center">Materi Aplikasi Magnet dalam Kehidupan</h1>
             <div className="materi-card">
                 <img src={materi.gambar} alt={materi.nama} className="materi-image" />
                 <div className="materi-content">
@@ -27,4 +27,4 @@ function GelombangElektromagnetik() {
     );
 }
 
-export default GelombangElektromagnetik;
+export default AplikasiMagnetDalamKehidupan;

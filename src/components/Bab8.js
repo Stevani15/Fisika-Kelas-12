@@ -1,51 +1,77 @@
 import React from "react";
 import '../styles/Bab.css';
-import { Link } from "react-router-dom";
-import gbdsimages from '../images/induksi.jpg';
-import gbrsimages from '../images/faraday.jpg';
-import stkimages from '../images/pengaruh.jpg';
+import gelombangImage from '../images/gelombang_elektromagnetik.png';
+function Bab8() {
+  const materiData = [
+    {
+      nama: "Pengertian Gelombang Elektromagnetik",
+      deskripsi:
+        "Gelombang elektromagnetik adalah gelombang yang dapat merambat tanpa memerlukan medium perantara. Gelombang ini terdiri dari medan listrik dan medan magnet yang saling tegak lurus dan berosilasi. Energi elektromagnetik merambat dalam bentuk gelombang dengan karakteristik seperti panjang gelombang, amplitudo, frekuensi, dan kecepatan.",
+      gambar: gelombangImage,
+      path: "/gelombang-elektromagnetik/pengertian"
+    },
+    {
+      nama: "Spektrum Gelombang Elektromagnetik",
+      deskripsi:
+        "Spektrum gelombang elektromagnetik terbagi menjadi beberapa jenis berdasarkan panjang gelombang dan frekuensi. Urutannya dari panjang gelombang terbesar (frekuensi terkecil) hingga terkecil (frekuensi terbesar) adalah sebagai berikut:",
+      subMateri: [
+        {
+          nama: "Gelombang Radio",
+          deskripsi: "Digunakan untuk transmisi sinyal pada jarak jauh, seperti radio dan televisi."
+        },
+        {
+          nama: "Gelombang Mikro",
+          deskripsi: "Digunakan dalam oven microwave dan komunikasi satelit. Ketika diserap oleh benda, akan menyebabkan pemanasan."
+        },
+        {
+          nama: "Sinar Inframerah",
+          deskripsi: "Tidak terlihat oleh mata manusia, tetapi dapat dirasakan sebagai panas. Digunakan dalam remote control dan pemanas."
+        },
+        {
+          nama: "Cahaya Tampak",
+          deskripsi: "Spektrum cahaya yang dapat dilihat oleh mata manusia."
+        },
+        {
+          nama: "Sinar Ultraviolet",
+          deskripsi: "Dapat menyebabkan kulit terbakar. Sumber utama adalah matahari."
+        },
+        {
+          nama: "Sinar X",
+          deskripsi: "Digunakan dalam bidang medis untuk mengambil gambar tulang."
+        },
+        {
+          nama: "Sinar Gamma",
+          deskripsi: "Memiliki frekuensi tertinggi dan daya tembus terbesar. Dihasilkan oleh proses radioaktif."
+        }
+      ]
+    },
+  ];
 
-function Bab1() {
-    const jurusanData = [
-      {
-        nama: "Pengertian Induksi Elektromagnetik",
-        deskripsi:
-          "Materi tentang geometri bidang datar pada umumnya menjelaskan tentang sebuah jarak, baik jarak antara titik dengan garis maupun antara dua titik",
-        gambar: gbdsimages,
-        path: "/images/induksi.jpg",
-      },
-      {
-        nama: "Hukum Faraday",
-        deskripsi:
-          "bangun ruang adalah sebutan untuk bangun-bangun yang berbentuk tiga dimensi atau bangun yang memiliki ruang yang di batasi dengan sisi-sisi nya.",
-        gambar: gbrsimages,
-        path: "/images/faraday.jpg",
-      },
-      {
-        nama: "Statistika",
-        deskripsi:
-          "ilmu yang memfokuskan pada cara merancang, menghimpun, menganalisis, menafsirkan, dan menyajikan data. ",
-        gambar: stkimages,
-        path: "/components/pengaruh.jpg",
-      },
-    ];
-
-    return (
-        <div className="jurusan-container">
-            <h1>Materi</h1>
-            <div className="jurusan-cards">
-            {jurusanData.map((jurusan, index) => (
-                <div key={index} className="jurusan-card">
-                    <img src={jurusan.gambar} alt={jurusan.nama} className="jurusan-image" />
-                    <Link to={jurusan.path}>
-                        <h2>{jurusan.nama}</h2>
-                    </Link>
-                    <p>{jurusan.deskripsi}</p>
-                </div>
-            ))}
+  return (
+    <div className="jurusan-container">
+      <h1>Materi Gelombang Elektromagnetik</h1>
+      <div className="materi-container">
+        {materiData.map((materi, index) => (
+          <div key={index} className="materi-card">
+            <div className="image-container">
+              <img src={materi.gambar} alt={materi.nama} className="materi-image" />
             </div>
-        </div>
-    );
+            <div className="text-container">
+              <h2>{materi.nama}</h2>
+              <p>{materi.deskripsi}</p>
+              {materi.subMateri && (
+                <ul>
+                  {materi.subMateri.map((subMateri, subIndex) => (
+                    <li key={subIndex}>{subMateri.nama}: {subMateri.deskripsi}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Bab1;
+export default Bab8;

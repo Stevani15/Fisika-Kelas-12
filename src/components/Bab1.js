@@ -1,51 +1,44 @@
 import React from "react";
 import '../styles/Bab.css';
-import { Link } from "react-router-dom";
-import gbdsimages from '../images/induksi.jpg';
-import gbrsimages from '../images/faraday.jpg';
-import stkimages from '../images/pengaruh.jpg';
+import gbdsimages from '../images/induksi.jpg'; // Gambar induksi elektromagnetik
 
 function Bab1() {
-    const jurusanData = [
-      {
-        nama: "Pengertian Induksi Elektromagnetik",
-        deskripsi:
-          "Materi tentang geometri bidang datar pada umumnya menjelaskan tentang sebuah jarak, baik jarak antara titik dengan garis maupun antara dua titik",
-        gambar: gbdsimages,
-        path: "/images/induksi.jpg",
-      },
-      {
-        nama: "Hukum Faraday",
-        deskripsi:
-          "bangun ruang adalah sebutan untuk bangun-bangun yang berbentuk tiga dimensi atau bangun yang memiliki ruang yang di batasi dengan sisi-sisi nya.",
-        gambar: gbrsimages,
-        path: "/images/faraday.jpg",
-      },
-      {
-        nama: "Statistika",
-        deskripsi:
-          "ilmu yang memfokuskan pada cara merancang, menghimpun, menganalisis, menafsirkan, dan menyajikan data. ",
-        gambar: stkimages,
-        path: "/components/pengaruh.jpg",
-      },
-    ];
-
-    return (
-        <div className="jurusan-container">
-            <h1>Materi</h1>
-            <div className="jurusan-cards">
-            {jurusanData.map((jurusan, index) => (
-                <div key={index} className="jurusan-card">
-                    <img src={jurusan.gambar} alt={jurusan.nama} className="jurusan-image" />
-                    <Link to={jurusan.path}>
-                        <h2>{jurusan.nama}</h2>
-                    </Link>
-                    <p>{jurusan.deskripsi}</p>
-                </div>
-            ))}
-            </div>
+  return (
+    <div className="jurusan-container">
+      <h1>Induksi Elektromagnetik</h1>
+      <div className="materi-card">
+        <div className="image-container">
+          <img src={gbdsimages} alt="Induksi Elektromagnetik" className="materi-image" />
         </div>
-    );
+        <div className="text-container">
+          <h2>Pengertian Induksi Elektromagnetik</h2>
+          <p>
+            Induksi elektromagnetik adalah fenomena fisika di mana sebuah perubahan medan magnet dapat menghasilkan arus listrik dalam konduktor yang berada di sekitar medan magnet tersebut. Fenomena ini ditemukan oleh Michael Faraday dan menjadi dasar bagi banyak teknologi seperti generator listrik dan transformator.
+          </p>
+          <h3>Rumus Induksi Elektromagnetik</h3>
+          <p>
+            Rumus untuk induksi elektromagnetik dapat dijelaskan dengan hukum Faraday:
+          </p>
+          <pre>
+            <code>
+              ε = -dΦ/dt
+            </code>
+          </pre>
+          <p>
+            Dimana:
+            <ul>
+              <li>ε = Gaya gerak listrik induksi (GGL) dalam volt</li>
+              <li>dΦ = Perubahan fluks magnetik dalam weber</li>
+              <li>dt = Waktu perubahan fluks magnetik</li>
+            </ul>
+          </p>
+          <p>
+            Negatif dalam rumus ini menunjukkan arah gaya gerak listrik yang berlawanan dengan perubahan fluks magnetik, sesuai dengan hukum Lenz.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Bab1;

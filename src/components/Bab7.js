@@ -38,13 +38,7 @@ function Bab7() {
             gambar: aplikasiMagnetImage,
             path: "/materi/aplikasi-magnet",
         },
-        {
-            nama: "Transformator",
-            deskripsi:
-                "Transformator adalah perangkat yang digunakan untuk mengubah tegangan listrik menggunakan prinsip induksi elektromagnetik. Materi ini mencakup prinsip kerja dan aplikasinya.",
-            gambar: transformatorImage,
-            path: "/materi/transformator",
-        },
+        
     ];
 
     return (

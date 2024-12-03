@@ -1,63 +1,55 @@
 import React from "react";
 import '../styles/Bab.css'; // Jika Anda memiliki file CSS tambahan
 import { Link } from "react-router-dom";
-import medanMagnetikImage from '../images/medan_magnetik.png';
-import gayaLorentzImage from '../images/gaya_lorentz.png';
-import induksiMagnetikImage from '../images/induksi_magnetik.png';
-import gelombangElektromagnetikImage from '../images/gelombang_elektromagnetik.png';
-import aplikasiMagnetImage from '../images/aplikasi_magnet.png';
+import hukumFaradayImage from '../images/hukum_faraday.png';
+import hukumLenzImage from '../images/hukum_lenz.png';
+import generatorListrikImage from '../images/generator_listrik.png';
 import transformatorImage from '../images/transformator.png';
+import aplikasiInduksiImage from '../images/aplikasi_induksi.png';
 
 function InduksiElektromagnetik() {
     const materiData = [
         {
-            nama: "Medan Magnetik",
+            nama: "Hukum Faraday",
             deskripsi:
-                "Medan magnetik adalah daerah di sekitar magnet di mana kekuatan magnet dapat dirasakan. Materi ini mencakup konsep dasar medan magnet dan hukum-hukum yang berlaku.",
-            gambar: medanMagnetikImage,
-            path: "/materi/medan-magnetik",
+                "Hukum Faraday menjelaskan bagaimana perubahan medan magnet dapat menghasilkan arus listrik dalam suatu konduktor. Materi ini membahas prinsip dasar induksi elektromagnetik.",
+            gambar: hukumFaradayImage,
+            path: "/materi/hukum-faraday",
         },
         {
-            nama: "Gaya Lorentz",
+            nama: "Hukum Lenz",
             deskripsi:
-                "Gaya Lorentz adalah gaya yang dialami oleh muatan listrik yang bergerak dalam medan magnet. Materi ini membahas hubungan antara medan listrik, medan magnet, dan kecepatan partikel.",
-            gambar: gayaLorentzImage,
-            path: "/materi/gaya-lorentz",
+                "Hukum Lenz menjelaskan arah arus induksi yang dihasilkan oleh perubahan medan magnet. Materi ini membantu memahami konsep energi dan hukum kekekalan energi.",
+            gambar: hukumLenzImage,
+            path: "/materi/hukum-lenz",
         },
         {
-            nama: "InduksiElektromagnetik",
+            nama: "Generator Listrik",
             deskripsi:
-                "Induksi magnetik adalah fenomena yang terjadi ketika medan magnet berubah, menghasilkan arus listrik dalam suatu konduktor. Materi ini mencakup hukum Faraday dan Lenz.",
-            gambar: induksiMagnetikImage,
-            path: "/materi/induksi-magnetik",
-        },
-        {
-            nama: "Gelombang Elektromagnetik",
-            deskripsi:
-                "Gelombang elektromagnetik adalah gelombang yang dihasilkan oleh kombinasi medan listrik dan medan magnet yang saling tegak lurus. Materi ini mencakup teori Maxwell dan aplikasinya.",
-            gambar: gelombangElektromagnetikImage,
-            path: "/materi/gelombang-elektromagnetik",
-        },
-        {
-            nama: "Aplikasi Magnet dalam Kehidupan",
-            deskripsi:
-                "Materi ini membahas penggunaan magnet dalam teknologi sehari-hari seperti MRI, kompas, dan motor listrik.",
-            gambar: aplikasiMagnetImage,
-            path: "/materi/aplikasi-magnet",
+                "Generator listrik adalah alat yang mengubah energi mekanik menjadi energi listrik menggunakan prinsip induksi elektromagnetik. Materi ini mencakup prinsip kerja dan aplikasinya.",
+            gambar: generatorListrikImage,
+            path: "/materi/generator-listrik",
         },
         {
             nama: "Transformator",
             deskripsi:
-                "Transformator adalah perangkat yang digunakan untuk mengubah tegangan listrik menggunakan prinsip induksi elektromagnetik. Materi ini mencakup prinsip kerja dan aplikasinya.",
+                "Transformator adalah perangkat yang digunakan untuk mengubah tegangan listrik berdasarkan prinsip induksi elektromagnetik. Materi ini mencakup jenis-jenis transformator dan penggunaannya.",
             gambar: transformatorImage,
             path: "/materi/transformator",
+        },
+        {
+            nama: "Aplikasi Induksi Elektromagnetik",
+            deskripsi:
+                "Materi ini membahas berbagai penerapan induksi elektromagnetik dalam kehidupan sehari-hari, seperti motor listrik, relai, dan perangkat elektronik.",
+            gambar: aplikasiInduksiImage,
+            path: "/materi/aplikasi-induksi",
         },
     ];
 
     return (
         <div className="container mt-5">
-            <h1 className="text-center mb-4 fw-bold">Materi Bab 7: Medan Magnetik</h1>
-            <p className="text-center text-muted mb-5">Pelajari berbagai konsep dan penerapan medan magnet dalam kehidupan sehari-hari. Pilih materi untuk memulai pembelajaran.</p>
+            <h1 className="text-center mb-4 fw-bold">Materi Bab 7: Induksi Elektromagnetik</h1>
+            <p className="text-center text-muted mb-5">Pelajari prinsip, hukum, dan penerapan induksi elektromagnetik dalam kehidupan sehari-hari. Klik pada materi untuk memulai pembelajaran.</p>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {materiData.map((materi, index) => (
                     <div key={index} className="col">

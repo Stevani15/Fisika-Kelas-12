@@ -1,51 +1,34 @@
 import React from "react";
 import '../styles/Bab.css';
-import { Link } from "react-router-dom";
-import gbdsimages from '../images/induksi.jpg';
-import gbrsimages from '../images/faraday.jpg';
-import stkimages from '../images/pengaruh.jpg';
+import induksiMagnetikImage from '../images/induksi_magnetik.png';
 
-function Bab1() {
-    const jurusanData = [
-      {
-        nama: "Pengertian Induksi Elektromagnetik",
+function InduksiMagnetik() {
+    const materi = {
+        nama: "Induksi Magnetik",
         deskripsi:
-          "Materi tentang geometri bidang datar pada umumnya menjelaskan tentang sebuah jarak, baik jarak antara titik dengan garis maupun antara dua titik",
-        gambar: gbdsimages,
-        path: "/images/induksi.jpg",
-      },
-      {
-        nama: "Hukum Faraday",
-        deskripsi:
-          "bangun ruang adalah sebutan untuk bangun-bangun yang berbentuk tiga dimensi atau bangun yang memiliki ruang yang di batasi dengan sisi-sisi nya.",
-        gambar: gbrsimages,
-        path: "/images/faraday.jpg",
-      },
-      {
-        nama: "Statistika",
-        deskripsi:
-          "ilmu yang memfokuskan pada cara merancang, menghimpun, menganalisis, menafsirkan, dan menyajikan data. ",
-        gambar: stkimages,
-        path: "/components/pengaruh.jpg",
-      },
-    ];
+            "Induksi magnetik adalah fenomena yang terjadi ketika perubahan medan magnet menghasilkan arus listrik pada konduktor. Materi ini mencakup penjelasan hukum Faraday dan aplikasi dalam kehidupan sehari-hari.",
+        gambar: induksiMagnetikImage,
+        path: "/materi/induksi-magnetik",
+    };
 
     return (
-        <div className="jurusan-container">
-            <h1>Materi</h1>
-            <div className="jurusan-cards">
-            {jurusanData.map((jurusan, index) => (
-                <div key={index} className="jurusan-card">
-                    <img src={jurusan.gambar} alt={jurusan.nama} className="jurusan-image" />
-                    <Link to={jurusan.path}>
-                        <h2>{jurusan.nama}</h2>
-                    </Link>
-                    <p>{jurusan.deskripsi}</p>
+        <div className="materi-container">
+            <h1 className="text-center mt-4">Materi: {materi.nama}</h1>
+            <div className="materi-card">
+                <img 
+                    src={materi.gambar} 
+                    alt={materi.nama} 
+                    className="materi-image mb-3"
+                    style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }}
+                />
+                <h2 className="text-primary text-center">{materi.nama}</h2>
+                <p className="text-muted text-center">{materi.deskripsi}</p>
+                <div className="text-center mt-3">
+                    <a href={materi.path} className="btn btn-outline-primary">Pelajari Lebih Lanjut</a>
                 </div>
-            ))}
             </div>
         </div>
     );
 }
 
-export default Bab1;
+export default InduksiMagnetik;
