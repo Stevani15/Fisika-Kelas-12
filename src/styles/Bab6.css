@@ -15,7 +15,7 @@
   
   .title {
     font-size: 3rem;
-    color: #2b6cb0;
+    color: #020202;
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@
   .section-title {
     font-size: 1.8rem;
     font-weight: 600;
-    background: #4299e1;
+    background: #0b0b0b;
     color: #fff;
     padding: 15px 20px;
     border-radius: 8px;
@@ -37,7 +37,7 @@
   }
   
   .section-title:hover {
-    background: #3182ce;
+    background: #151516;
   }
   
   .section-content {
