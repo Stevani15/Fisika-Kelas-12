@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import '../styles/Bab5.css'; // Pastikan path ini sesuai dengan struktur proyek Anda
+import '../styles/Bab5.css'; 
 
 const Bab5 = () => {
-  // React state to manage which section is active
   const [activeSection, setActiveSection] = useState(null);
 
   const toggleSection = (section) => {
-    console.log('Toggling section:', section); // Debugging
+    console.log('Toggling section:', section); 
     if (activeSection === section) {
       setActiveSection(null);
     } else {
@@ -19,7 +18,6 @@ const Bab5 = () => {
       <div className="content-container">
         <h1 className="title">Fisika Modern</h1>
 
-        {/* Section 1 - Pengertian Fisika Modern */}
         <div className="section">
           <h2 className="section-title" onClick={() => toggleSection("pengertian")}>
             Pengertian Fisika Modern
@@ -44,7 +42,6 @@ const Bab5 = () => {
           </div>
         </div>
 
-        {/* Section 2 - Cabang-Cabang Fisika Modern */}
         <div className="section">
           <h2 className="section-title" onClick={() => toggleSection("cabang")}>
             Cabang-Cabang Fisika Modern
@@ -61,7 +58,7 @@ const Bab5 = () => {
               <li><b>Fisika Kuantum Optik</b>: Menggabungkan mekanika kuantum dengan fenomena optik, berfokus pada interaksi cahaya dan materi pada tingkat submikroskopis.</li>
             </ul>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Photon-particle-wave.jpg"
+              src="https://files.oaiusercontent.com/file-DLgK6hTKBHUWp84H18gGeK?se=2024-12-04T02%3A48%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0c3ce0ad-98c2-49c3-867e-6836b05d2b48.webp&sig=koPvmQJarpfnZDIRutQnlmR%2BH1M%2BKvkLsv%2BCh2WmYfI%3D"
               alt="Foton dan Kuantum Energi"
               className="section-image"
             />
@@ -69,7 +66,7 @@ const Bab5 = () => {
           </div>
         </div>
 
-        {/* Section 3 - Aplikasi Fisika Modern */}
+      
         <div className="section">
           <h2 className="section-title" onClick={() => toggleSection("aplikasi")}>
             Aplikasi Fisika Modern
@@ -85,7 +82,7 @@ const Bab5 = () => {
               <li><b>Elektronik Modern</b>: Perangkat seperti semikonduktor dan transistor yang memungkinkan perkembangan komputer, telekomunikasi, dan perangkat mobile.</li>
             </ul>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Quantum_computer.jpg"
+              src="https://thumbs.dreamstime.com/z/ibm-q-system-one-quantum-computer-consumer-electronic-show-ces-las-vegas-nevada-january-ibm-q-system-one-quantum-computer-172301229.jpg?ct=jpeg"
               alt="Komputer Kuantum"
               className="section-image"
             />
@@ -93,7 +90,7 @@ const Bab5 = () => {
           </div>
         </div>
 
-        {/* Section 4 - Gambar Pendukung */}
+    
         <div className="section">
           <h2 className="section-title" onClick={() => toggleSection("gambar")}>
             Gambar Pendukung
@@ -103,7 +100,7 @@ const Bab5 = () => {
               Berikut adalah beberapa gambar yang mendukung konsep-konsep dalam fisika modern.
             </p>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Quantum_physics_diagram.png"
+              src="https://i0.wp.com/www.physics-and-radio-electronics.com/electronic-devices-and-circuits/introduction/images/atom.png"
               alt="Diagram Fisika Kuantum"
               className="section-image"
             />
