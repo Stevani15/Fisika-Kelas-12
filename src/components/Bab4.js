@@ -26,7 +26,6 @@ function Bab4() {
         </p>
       </section>
 
-      {/* Rumus Section */}
       <section className="content">
         <h2>Rumus</h2>
         <p>

@@ -42,7 +42,7 @@ function Bab3() {
 
   return (
     <div className="container">
-      <h1 className="title">Sumber Energi dan Energi</h1>
+      <h1 className="title">Sumber Energi</h1>
 
     
       <section className="content">
@@ -94,7 +94,7 @@ function Bab3() {
         </ul>
         <img
           className="section-image"
-          src="https://via.placeholder.com/500"
+          src="https://png.pngtree.com/png-vector/20240531/ourlarge/pngtree-renewable-and-non-renewable-sources-of-energy-diagram-png-image_12571359.png"
           alt="Ilustrasi Sumber Energi"
         />
         <p className="image-caption">Gambar: Contoh berbagai sumber energi.</p>
