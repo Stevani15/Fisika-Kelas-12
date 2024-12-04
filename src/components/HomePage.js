@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "../styles/HomePage.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 const HomePage = () => {
   return (
@@ -19,14 +17,6 @@ const HomePage = () => {
               className="logo-img me-3" 
             />
             <h1 className="m-0">PhysicsMadeEasy</h1>
-          </div>
-          <div>
-            <a href="https://www.youtube.com/@BIGCourse" className="text-white mx-2">
-              <i className="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/tutorfisika?igsh=Y2xtNHU3ZWF1MGU1" className="text-white mx-2">
-              <i className="fab fa-instagram"></i>
-            </a>
           </div>
         </div>
       </header>
