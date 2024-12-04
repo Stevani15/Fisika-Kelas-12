@@ -161,12 +161,12 @@ const HomePage = () => {
     <div className="topic-card">
     <h2>Bab 7</h2>
       <h3>Rangkaian Arus Searah</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
+      <p>Prinsip Rangkaian Arus Searah dan penerapannya.</p>
     </div>
     <div className="topic-card">
     <h2>Bab 8</h2>
       <h3>Gelombang Elektromagnetik</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
+      <p>Prinsip Gelombang elektromagnetik dan penerapannya.</p>
     </div>
   </div>
 </main>
