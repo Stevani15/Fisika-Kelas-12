@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../styles/Bab6.css';
 
-const ArusBolakBalik = () => {
+const Bab6 = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   const handleSectionClick = (section) => {
@@ -135,5 +135,5 @@ const ArusBolakBalik = () => {
   );
 };
 
-export default ArusBolakBalik;
+export default Bab6;
 

@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import "../styles/HomePage.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import "../styles/LatihanSoal.css";
 
-
-const HomePage = () => {
+const LatihanSoal = () => {
   return (
     <div>
       {/* Header Section */}
@@ -18,13 +17,19 @@ const HomePage = () => {
               alt="Logo"
               className="logo-img me-3" 
             />
-            <h1 className="m-0">PhysicsMadeEasy</h1>
+            <h1 className="m-0">Fisika</h1>
           </div>
           <div>
-            <a href="https://www.youtube.com/@BIGCourse" className="text-white mx-2">
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
               <i className="fab fa-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/tutorfisika?igsh=Y2xtNHU3ZWF1MGU1" className="text-white mx-2">
+            <a href="#" className="text-white mx-2">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -62,18 +67,18 @@ const HomePage = () => {
               aria-expanded="false"
               >
               Materi
-            </a>
-            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-            <Link to="/Bab1" className="dropdown-item">
-            Bab.1
-            </Link>
-            </li>
-            <li>
-            <Link to="/bab2" className="dropdown-item">
-            Bab.2
-          </Link>
-          </li>
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                    <Link to="/bab1" className="dropdown-item">
+                      Bab.1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/bab2" className="dropdown-item">
+                      Bab.2
+                    </Link>
+                  </li>
                   <li>
                     <Link to="/bab3" className="dropdown-item">
                       Bab.3
@@ -100,7 +105,7 @@ const HomePage = () => {
                     </Link>
                   </li>
                   <li>
-                  <Link to="/bab8" className="dropdown-item">
+                    <Link to="/bab8" className="dropdown-item">
                       Bab.8
                     </Link>
                   </li>
@@ -118,58 +123,61 @@ const HomePage = () => {
 
       {/* Content Section */}
       <div className="title-container">
-        <h1 className="homepage-title">Materi Pelajaran Fisika Kelas 12 SMA</h1>
+        <h1 className="homepage-title">Mari Berlatih Soal Fisika Kelas 12 SMA</h1>
       </div>
 
+      {/* Main Content */}
+     <main className="main-content">
+        <p>Kerjakan soal ini untuk mengasah dan mengukur kemampuan kamu!</p>
+     </main>
 
 
     {/* Main Content */}
-<main className="main-content">
-  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh aplikasi, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
 
-  <div className="topics">
-  <div className="topic-card">
-      <h2>Bab 1</h2>
-      <h3>Induksi Elektromagnetik</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 2</h2>
-      <h3>Medan Magnetik</h3>
-      <p>Penjelasan tentang medan magnetik dan aplikasinya.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 3</h2>
-      <h3>Sumber Energi</h3>
-      <p>Pelajari sumber energi yang digunakan dalam kehidupan sehari-hari.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 4</h2>
-      <h3>Teknologi Digital</h3>
-      <p>Eksplorasi bagaimana fisika diterapkan dalam teknologi digital.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 5</h2>
-      <h3>Fisika Modern</h3>
-      <p>Konsep fisika modern, seperti relativitas dan mekanika kuantum.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 6</h2>
-      <h3>Rangkaian Arus Bolak Balik</h3>
-      <p>Dasar-dasar rangkaian listrik arus bolak-balik.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 7</h2>
-      <h3>Rangkaian Arus Searah</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 8</h2>
-      <h3>Gelombang Elektromagnetik</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
-    </div>
-  </div>
-</main>
+    <main className="main-content">
+      <div className="topics">
+        <div className="topic-card">
+          <h2>Bab 1</h2>
+          <h3>Induksi Elektromagnetik</h3>
+          <Link to="/LatB1" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 2</h2>
+          <h3>Medan Magnetik</h3>
+          <Link to="/LatB2" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 3</h2>
+          <h3>Sumber Energi</h3>
+          <Link to="/LatB3" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 4</h2>
+          <h3>Teknologi Digital</h3>
+          <Link to="/LatB4" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 5</h2>
+          <h3>Fisika Modern</h3>
+          <Link to="/LatB5" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 6</h2>
+          <h3>Rangkaian Arus Bolak Balik</h3>
+          <Link to="/LatB6" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 7</h2>
+          <h3>Rangkaian Arus Searah</h3>
+          <Link to="/LatB7" className="topic-link">Kerjakan Soal</Link>
+        </div>
+        <div className="topic-card">
+          <h2>Bab 8</h2>
+          <h3>Gelombang Elektromagnetik</h3>
+          <Link to="/LatB8" className="topic-link">Kerjakan Soal</Link>
+        </div>
+      </div>
+    </main>
 
 
  {/* Footer */}
@@ -181,4 +189,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default LatihanSoal;
