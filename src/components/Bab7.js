@@ -18,12 +18,10 @@ function Bab8() {
 Sumber energi yang bisa diperbarui sehingga dalam penggunaannya dapat dengan cepat dan mudah didapatkan. Sumber energi terbarukan ini ketersediannya tidak terbatas dan dapat dimanfaatkan secara terus-menerus. Sumber energi ini memiliki kelebihan tidak mencemari lingkungan.
 
 Contoh energi terbarukan diantaranya :`,
-teori:
-
-`Biofuel
+teori: `Biofuel
 Biofuel atau bahan bakar hayati adalah sumber energi terbarukan berupa bahan bakar (baik padat, cair, dan gas) yang dihasilkan dari bahan-bahan organik.`,
 
-teroi: `Biomassa
+teori: `Biomassa
 Biomassa adalah jenis energi terbarukan yang mengacu pada bahan biologis yang berasal dari organisme yang hidup atau belum lama mati. Sumber biomassa antara lain bahan bakar kayu, limbah dan alkohol.
 
 Biomassa dapat pula dikonversi atau diubah menjadi bentuk lain seperti gas metana (biogas), ethanol, dan biodiesel.`,
@@ -48,24 +46,32 @@ Energi pasang surut air laut adalah energi terbarukan yang bersumber dari proses
 
     },
     {
-      nama: "Pemrosesan Sinyal Digital",
+      nama: "Pemanfaatan Energi Alternatif",
       deskripsi:
-        "Pemrosesan sinyal digital (DSP) melibatkan manipulasi sinyal untuk memperbaiki kualitas atau untuk mengambil informasi dari sinyal.",
+        "Penggunaan sumber energi tentu memiliki dampak bagi kehidupan. Beberapa dampak tersebut adalah:",
       gambar: sumber1,
       path: "/pemrosesan-sinyal-digital",
-      teori: `Salah satu operasi penting dalam pemrosesan sinyal digital adalah transformasi Fourier yang digunakan untuk mengubah sinyal ke domain frekuensi. Rumus transformasi Fourier adalah:
-      \[ X(f) = \int_{-\infty}^{\infty} x(t) e^{-j2\pi ft} dt \]
-      Di mana \( X(f) \) adalah representasi frekuensi dari sinyal \( x(t) \).`,
+      teori: `Sebagai energi atau bahan bakar, misalnya gas, minyak bumi, dan batu bara
+      Sebagai bahan jenis industri, seperti industri pesawat, kendaraan bermotor, persenjataan, dan lain-lain
+      Untuk bahan konstruksi
+      Bahan untuk membuat perhiasan, seperti emas, intan, dan lain-lain`,
     },
     {
-      nama: "Komunikasi Digital",
+      nama: "Pembangkit Listrik",
       deskripsi:
-        "Komunikasi digital mengacu pada pengiriman informasi dalam bentuk sinyal digital. Ini melibatkan pengkodean, pengiriman, dan dekode informasi.",
+        "Pembangkit listrik adalah sebuah alat yang dapat membangkitkan dan memproduksi tenaga listrik dengan cara mengubah suatu energi menjadi energi listrik. Pembangkit listrik memiliki banyak macam nya. Apa saja macam pembangkit listrik tersebut? Simak ulasan berikut ini!",
+
+teori: `Pembangkit Listrik Tenaga Surya (PLTS)
+Pembangkit listrik yang satu ini dapat digolongkan sebagai energi yang ramah lingkungan, hemat, dan efektif. Pasalnya, sinar matahari sebagai sumbernya akan terus ada sepanjang masa. Tidak hanya itu, kelebihan dari pembangkit listrik tenaga surya (PLTS) ini juga cenderung memiliki sumber energi yang kuat untuk menghasilkan listrik. Pembangkit ini menggunakan perlengkapan seperti panel surya untuk menangkap cahaya matahari yang berlimpah sepanjang hari.
+
+Pada umumnya, pembangkit listrik yang satu ini sudah banyak digunakan oleh masyarakat sebagai penunjang energi yang cukup ideal dan murah.
+
+Pembangkit Listrik Tenaga Air (PLTA)
+Pembangkit listrik yang satu ini mengandalkan kecepatan arus air yang digunakan untuk menggerakkan turbin yang berfungsi sebagai pemicu arus air yang dibutuhkan. Macam pembangkit listrik ini mengubah energi kinetik pada air menjadi energi listrik yang murni, hemat, serta ramah lingkungan.
+
+Selain itu, pembangkit listrik tenaga air ini bersifat dapat diperbarui atau renewable energy. Pada umumnya, jenis pembangkit listrik ini dipasang tepat di sebelah sumber air yang cukup besar seperti bendungan, waduk, atau sungai dengan aliran airnya yang cukup deras.`,
       gambar: sumberenergi2,
-      path: "/komunikasi-digital",
-      teori: `Salah satu metode dalam komunikasi digital adalah pengkodean sumber yang digunakan untuk mengubah data asli menjadi format yang lebih efisien. Rumus pengkodean sumber adalah:
-      \[ H(X) = - \sum_{i=1}^{n} p(x_i) \log_2 p(x_i) \]
-      Di mana \( H(X) \) adalah entropi informasi dari sumber, dan \( p(x_i) \) adalah probabilitas simbol \( x_i \) pada sumber tersebut.`,
+      path: "/pembangkit-listrik",
     },
   ];
 
