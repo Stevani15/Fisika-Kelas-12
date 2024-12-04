@@ -1,10 +1,10 @@
-/* General Styles */
+/* General Styles
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-}
+} */
 
 .main-container {
     display: flex;
