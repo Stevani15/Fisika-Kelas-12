@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import '../styles/Bab3.css';
 
@@ -183,6 +184,6 @@ function Bab3() {
     </div>
   );
 }
+export default  Bab3;
 
-export default Bab3;
 
