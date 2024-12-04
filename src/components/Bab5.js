@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../styles/Bab5.css'; // Pastikan path ini sesuai dengan struktur proyek Anda
 
-const FisikaModern = () => {
+const Bab5 = () => {
   // React state to manage which section is active
   const [activeSection, setActiveSection] = useState(null);
 
@@ -115,4 +115,4 @@ const FisikaModern = () => {
   );
 };
 
-export default FisikaModern;
+export default Bab5;
