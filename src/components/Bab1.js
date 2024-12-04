@@ -56,6 +56,7 @@ function Bab1() {
 
   return (
     <div className="jurusan-container">
+  
       <h1>Induksi Elektromagnetik</h1>
       {materi.map((item, index) => (
         <div key={index} className="materi-card">
