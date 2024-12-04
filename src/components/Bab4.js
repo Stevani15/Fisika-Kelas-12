@@ -21,7 +21,7 @@ function TeknologiDigital() {
         </p>
         <p>
           Dalam teknologi digital, sistem menggunakan logika Boolean yang memiliki dua nilai utama:
-          **True (1)** dan **False (0)**. Teknologi digital memungkinkan pengolahan data dengan
+          True (1) dan False (0). Teknologi digital memungkinkan pengolahan data dengan
           kecepatan dan efisiensi tinggi.
         </p>
       </section>
@@ -50,7 +50,7 @@ function TeknologiDigital() {
       {/* Example Section */}
       <section className="content">
         <h2>Contoh:</h2>
-        <p>1. Biner **1011** ke Desimal:</p>
+        <p>1. Biner 1011 ke Desimal:</p>
         <ul>
           <li>1 × 2<sup>3</sup> = 8</li>
           <li>0 × 2<sup>2</sup> = 0</li>
@@ -61,7 +61,7 @@ function TeknologiDigital() {
           Total: 8 + 0 + 2 + 1 = <strong>11</strong>
         </p>
 
-        <p>2. Desimal **11** ke Biner:</p>
+        <p>2. Desimal 11 ke Biner:</p>
         <ul>
           <li>11 ÷ 2 = 5 (sisa 1)</li>
           <li>5 ÷ 2 = 2 (sisa 1)</li>
@@ -71,7 +71,6 @@ function TeknologiDigital() {
         <p>Baca dari bawah ke atas: <strong>1011</strong></p>
       </section>
 
-      {/* Implementasi Rumus */}
       <section className="content">
         <h2>Implementasi Rumus</h2>
         <p>Masukkan angka untuk konversi:</p>
