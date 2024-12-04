@@ -10,7 +10,7 @@ function SumberEnergi() {
   const [potentialEnergy, setPotentialEnergy] = useState(null);
   const [mechanicalEnergy, setMechanicalEnergy] = useState(null);
 
-  const g = 9.8; // Gravitasi (m/s^2)
+  const g = 9.8;
 
   const calculateKineticEnergy = () => {
     const m = parseFloat(mass);
@@ -44,9 +44,9 @@ function SumberEnergi() {
     <div className="container">
       <h1 className="title">Sumber Energi dan Energi</h1>
 
-      {/* Teori Sumber Energi */}
+    
       <section className="content">
-        <h2>Teori Sumber Energi</h2>
+        <h2>Pendahuluan</h2>
         <p>
           Energi adalah kemampuan untuk melakukan kerja. Dalam kehidupan sehari-hari, energi
           berasal dari berbagai sumber yang dapat diklasifikasikan menjadi dua kategori utama:
@@ -100,7 +100,7 @@ function SumberEnergi() {
         <p className="image-caption">Gambar: Contoh berbagai sumber energi.</p>
       </section>
 
-      {/* Teori Energi */}
+
       <section className="content">
         <h2>Teori Energi</h2>
         <p>
@@ -137,8 +137,7 @@ function SumberEnergi() {
           </li>
         </ul>
       </section>
-
-      {/* Kalkulator */}
+      
       <section className="content">
         <h2>Kalkulator Energi</h2>
         <input
