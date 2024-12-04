@@ -8,7 +8,6 @@ import "../styles/LatihanSoal.css";
 const LatihanSoal = () => {
   return (
     <div>
-      {/* Header Section */}
       <header className="bg-primary text-white text-center py-3">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
@@ -36,7 +35,7 @@ const LatihanSoal = () => {
         </div>
       </header>
 
-      {/* Navbar Section */}
+  
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <button
@@ -120,19 +119,15 @@ const LatihanSoal = () => {
           </div>
         </div>
       </nav>
-
-      {/* Content Section */}
       <div className="title-container">
         <h1 className="homepage-title">Mari Berlatih Soal Fisika Kelas 12 SMA</h1>
       </div>
 
-      {/* Main Content */}
      <main className="main-content">
         <p>Kerjakan soal ini untuk mengasah dan mengukur kemampuan kamu!</p>
      </main>
 
 
-    {/* Main Content */}
 
     <main className="main-content">
       <div className="topics">
