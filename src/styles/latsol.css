@@ -1,230 +1,232 @@
 /* latsol.css */
 .latb1-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e0f7fa;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0f7fa;
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.start-screen h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.start-screen button {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.start-screen button:hover {
+  background-color: #3700b3;
+}
+
+.question-screen h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Tombol pilihan standar */
+.option-button {
+  background-color: #eeeeee;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000000; /* Teks berwarna hitam untuk visibilitas */
+}
+
+/* Tombol yang dipilih */
+.option-button.selected {
+  background-color: #6200ea;
+  color: #000000; /* Teks tetap hitam ketika dipilih */
+  font-weight: bold;
+  border: 2px solid #3700b3;
+}
+
+/* Hover pada tombol */
+.option-button:hover {
+  background-color: #cccccc;
+  color: #000000; /* Teks tetap hitam saat hover */
+}
+
+.feedback-message {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.feedback-message.correct {
+  color: green;
+}
+
+.feedback-message.incorrect {
+  color: red;
+}
+
+.next-button {
+  background-color: #03dac6;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.next-button:hover {
+  background-color: #018786;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.score-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.score-screen h1 {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.score-screen p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.review-container {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.review-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.correct-answer {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect-answer {
+  color: red;
+  font-weight: bold;
+}
+
+.restart-button {
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.restart-button:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 480px) {
   .quiz-container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .start-screen h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .start-screen button {
-    background-color: #6200ea;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .start-screen button:hover {
-    background-color: #3700b3;
-  }
-  
-  .question-screen h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .options-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px 0;
-  }
-  
-  .option-button {
-    background-color: #eeeeee;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .option-button.selected {
-    background-color: #6200ea;
-    color: #ffffff;
-    font-weight: bold;
-    border: 2px solid #3700b3;
-  }
-  
-  .option-button:hover {
-    background-color: #cccccc;
-  }
-  
-  .feedback-message {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .feedback-message.correct {
-    color: green;
-  }
-  
-  .feedback-message.incorrect {
-    color: red;
-  }
-  
-  .next-button {
-    background-color: #03dac6;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .next-button:hover {
-    background-color: #018786;
-  }
-  
-  .timer {
-    font-size: 18px;
-    font-weight: bold;
-    color: #d32f2f;
-    margin-bottom: 10px;
-  }
-  
-  .score-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .score-screen h1 {
-    font-size: 24px;
-    color: #4caf50;
-  }
-  
-  .score-screen p {
-    font-size: 18px;
-    margin: 0;
-  }
-  
-  .review-container {
-    margin-top: 20px;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .review-item {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  .review-item:last-child {
-    border-bottom: none;
-  }
-  
-  .correct-answer {
-    color: green;
-    font-weight: bold;
-  }
-  
-  .incorrect-answer {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .restart-button {
-    background-color: #ff5722;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .restart-button:hover {
-    background-color: #e64a19;
-  }
-  
-  
-  @media (max-width: 480px) {
-    .quiz-container {
       padding: 15px;
       width: 95%;
-    }
   }
-  
-  
-  .review-container {
-    margin-top: 30px;
-    text-align: left;
-    width: 100%;
-    font-size: 18px; /* Ukuran teks lebih besar */
-    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
-  }
-  
-  .review-item {
-    border: 2px solid #6200ea; /* Border tebal untuk menonjolkan item */
-    border-radius: 8px;
-    padding: 20px; /* Spasi lebih besar */
-    margin-bottom: 15px; /* Jarak antar item */
-    background-color: #f3e5f5; /* Warna latar belakang lembut */
-  }
-  
-  .review-item h3 {
-    margin: 0 0 10px; /* Judul tiap soal */
-    font-size: 20px; /* Ukuran judul */
-    color: #333;
-  }
-  
-  .correct-answer {
-    color: green;
-    font-size: 18px; /* Ukuran teks lebih besar */
-    font-weight: bold;
-  }
-  
-  .incorrect-answer {
-    color: red;
-    font-size: 18px; /* Ukuran teks lebih besar */
-    font-weight: bold;
-  }
-  
-  .correct-answer,
-  .incorrect-answer {
-    display: block; /* Membuatnya tampil di baris sendiri */
-    margin-top: 10px;
-  }
-  
-  .review-option {
-    font-size: 16px; /* Teks pilihan jawaban */
-    padding: 5px;
-  }
-  
-  .restart-button {
-    background-color: #d32f2f;
-    color: white;
-    font-size: 18px; /* Ukuran teks lebih besar */
-    padding: 15px 30px; /* Tombol lebih besar */
-    border-radius: 8px;
-  }
-  
-  .restart-button:hover {
-    background-color: #b71c1c;
-  }
-  
+}
+
+.review-container {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  font-size: 18px; /* Ukuran teks lebih besar */
+  line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+}
+
+.review-item {
+  border: 2px solid #6200ea; /* Border tebal untuk menonjolkan item */
+  border-radius: 8px;
+  padding: 20px; /* Spasi lebih besar */
+  margin-bottom: 15px; /* Jarak antar item */
+  background-color: #f3e5f5; /* Warna latar belakang lembut */
+}
+
+.review-item h3 {
+  margin: 0 0 10px; /* Judul tiap soal */
+  font-size: 20px; /* Ukuran judul */
+  color: #333;
+}
+
+.correct-answer {
+  color: green;
+  font-size: 18px; /* Ukuran teks lebih besar */
+  font-weight: bold;
+}
+
+.incorrect-answer {
+  color: red;
+  font-size: 18px; /* Ukuran teks lebih besar */
+  font-weight: bold;
+}
+
+.correct-answer,
+.incorrect-answer {
+  display: block; /* Membuatnya tampil di baris sendiri */
+  margin-top: 10px;
+}
+
+.review-option {
+  font-size: 16px; /* Teks pilihan jawaban */
+  padding: 5px;
+}
+
+.restart-button {
+  background-color: #d32f2f;
+  color: white;
+  font-size: 18px; /* Ukuran teks lebih besar */
+  padding: 15px 30px; /* Tombol lebih besar */
+  border-radius: 8px;
+}
+
+.restart-button:hover {
+  background-color: #b71c1c;
+}
