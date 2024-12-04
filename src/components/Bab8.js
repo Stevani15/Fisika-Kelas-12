@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/Bab.css';
 import gelombangImage from '../images/gelombang_elektromagnetik.png';
+import SpektrumGelombangElektromagnetik from '../images/SpektrumGelombangElektromagnetik.png';
+
 function Bab8() {
   const materiData = [
     {
@@ -14,6 +16,7 @@ function Bab8() {
       nama: "Spektrum Gelombang Elektromagnetik",
       deskripsi:
         "Spektrum gelombang elektromagnetik terbagi menjadi beberapa jenis berdasarkan panjang gelombang dan frekuensi. Urutannya dari panjang gelombang terbesar (frekuensi terkecil) hingga terkecil (frekuensi terbesar) adalah sebagai berikut:",
+      gambar: SpektrumGelombangElektromagnetik,
       subMateri: [
         {
           nama: "Gelombang Radio",

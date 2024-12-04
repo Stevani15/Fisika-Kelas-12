@@ -1,42 +1,73 @@
 import React from "react";
 import '../styles/Bab.css';
-import gbdsimages from '../images/induksi.jpg'; // Gambar induksi elektromagnetik
+import gambar1 from '../images/induksi_magnetik.png'; // Gambar pertama
+import gambar2 from '../images/hukum_faraday.png'; // Gambar kedua
+import gambar3 from '../images/hukum_lenz.png'; // Gambar ketiga
+import gambar4 from '../images/fluks_magnetik.png'; // Gambar keempat
+import gambar5 from '../images/aplikasi_magnet.png'; // Gambar kelima
 
 function Bab1() {
+  const materi = [
+    {
+      gambar: gambar1,
+      judul: "Pengertian Induksi Elektromagnetik",
+      deskripsi:
+        "Induksi elektromagnetik adalah fenomena di mana perubahan medan magnet di sekitar konduktor menghasilkan arus listrik. Fenomena ini ditemukan oleh Michael Faraday dan menjadi dasar bagi berbagai aplikasi, seperti generator listrik dan transformator."
+    },
+    {
+      gambar: gambar2,
+      judul: "Hukum Faraday",
+      deskripsi:
+        "Hukum Faraday menjelaskan bahwa GGL (gaya gerak listrik) yang diinduksi sebanding dengan laju perubahan fluks magnetik. Rumus:\n" +
+        "ε = -dΦ/dt\n" +
+        "Dimana:\n" +
+        "ε = GGL (volt),\n" +
+        "Φ = fluks magnetik (weber),\n" +
+        "t = waktu (detik)."
+    },
+    {
+      gambar: gambar3,
+      judul: "Hukum Lenz",
+      deskripsi:
+        "Hukum Lenz menyatakan bahwa arah arus yang diinduksi selalu sedemikian rupa sehingga menghasilkan medan magnet yang menentang perubahan fluks magnetik. Hal ini ditunjukkan oleh tanda negatif dalam hukum Faraday: ε = -dΦ/dt."
+    },
+    {
+      gambar: gambar4,
+      judul: "Rumus Fluks Magnetik",
+      deskripsi:
+        "Fluks magnetik adalah jumlah garis medan magnet yang melewati suatu permukaan. Rumus:\n" +
+        "Φ = B * A * cos(θ)\n" +
+        "Dimana:\n" +
+        "Φ = fluks magnetik (weber),\n" +
+        "B = medan magnet (tesla),\n" +
+        "A = luas permukaan (m²),\n" +
+        "θ = sudut antara medan magnet dan normal permukaan."
+    },
+    {
+      gambar: gambar5,
+      judul: "Aplikasi Induksi Elektromagnetik",
+      deskripsi:
+        "Induksi elektromagnetik digunakan dalam berbagai perangkat, seperti:\n" +
+        "- Generator listrik: Mengubah energi mekanik menjadi energi listrik.\n" +
+        "- Transformator: Mengubah tegangan listrik dalam sistem AC.\n" +
+        "- Motor listrik: Mengubah energi listrik menjadi energi mekanik."
+    }
+  ];
+
   return (
     <div className="jurusan-container">
       <h1>Induksi Elektromagnetik</h1>
-      <div className="materi-card">
-        <div className="image-container">
-          <img src={gbdsimages} alt="Induksi Elektromagnetik" className="materi-image" />
+      {materi.map((item, index) => (
+        <div key={index} className="materi-card">
+          <div className="image-container">
+            <img src={item.gambar} alt={item.judul} className="materi-image" />
+          </div>
+          <div className="text-container">
+            <h2>{item.judul}</h2>
+            <p>{item.deskripsi}</p>
+          </div>
         </div>
-        <div className="text-container">
-          <h2>Pengertian Induksi Elektromagnetik</h2>
-          <p>
-            Induksi elektromagnetik adalah fenomena fisika di mana sebuah perubahan medan magnet dapat menghasilkan arus listrik dalam konduktor yang berada di sekitar medan magnet tersebut. Fenomena ini ditemukan oleh Michael Faraday dan menjadi dasar bagi banyak teknologi seperti generator listrik dan transformator.
-          </p>
-          <h3>Rumus Induksi Elektromagnetik</h3>
-          <p>
-            Rumus untuk induksi elektromagnetik dapat dijelaskan dengan hukum Faraday:
-          </p>
-          <pre>
-            <code>
-              ε = -dΦ/dt
-            </code>
-          </pre>
-          <p>
-            Dimana:
-            <ul>
-              <li>ε = Gaya gerak listrik induksi (GGL) dalam volt</li>
-              <li>dΦ = Perubahan fluks magnetik dalam weber</li>
-              <li>dt = Waktu perubahan fluks magnetik</li>
-            </ul>
-          </p>
-          <p>
-            Negatif dalam rumus ini menunjukkan arah gaya gerak listrik yang berlawanan dengan perubahan fluks magnetik, sesuai dengan hukum Lenz.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

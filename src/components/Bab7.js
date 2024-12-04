@@ -1,68 +1,80 @@
 import React from "react";
-import '../styles/Bab.css'; // Jika Anda memiliki file CSS tambahan
-import { Link } from "react-router-dom";
-import medanMagnetikImage from '../images/medan_magnetik.png';
-import induksiMagnetikImage from '../images/induksi_magnetik.png';
-import gelombangElektromagnetikImage from '../images/gelombang_elektromagnetik.png';
-import aplikasiMagnetImage from '../images/aplikasi_magnet.png';
-import transformatorImage from '../images/transformator.png';
+import '../styles/Bab.css';
+import rangkaianArusSearahImage1 from '../images/rangkaian_arus_searah1.png';
+import rangkaianArusSearahImage2 from '../images/rangkaian_arus_searah2.png';
+import rangkaianArusSearahImage3 from '../images/rangkaian_arus_searah3.png';
 
 function Bab7() {
-    const materiData = [
+  const materiData = [
+    {
+      nama: "Pengertian Rangkaian Arus Searah",
+      deskripsi:
+        "Rangkaian arus searah (DC) adalah rangkaian listrik di mana arus mengalir dalam satu arah saja. Sumber utama arus searah adalah baterai atau sel surya, dan sering digunakan dalam perangkat elektronik kecil hingga besar.",
+      gambar: rangkaianArusSearahImage1,
+      path: "/rangkaian-arus-searah/pengertian"
+    },
+    {
+      nama: "Rumus-Rumus pada Rangkaian Arus Searah",
+      deskripsi:
+        "Dalam rangkaian arus searah, beberapa rumus penting yang sering digunakan adalah sebagai berikut:",
+      subMateri: [
         {
-            nama: "Medan Magnetik",
-            deskripsi:
-                "Medan magnetik adalah daerah di sekitar magnet di mana kekuatan magnet dapat dirasakan. Materi ini mencakup konsep dasar medan magnet dan hukum-hukum yang berlaku.",
-            gambar: medanMagnetikImage,
-            path: "/materi/medan-magnetik",
+          nama: "Hukum Ohm",
+          deskripsi: "V = I × R"
         },
+        {
+          nama: "Daya Listrik",
+          deskripsi: "P = V × I"
+        },
+        {
+          nama: "Energi Listrik",
+          deskripsi: "W = P × t"
+        },
+        {
+          nama: "Kapasitor dalam Rangkaian Seri",
+          deskripsi: "1 / C_total = 1 / C_1 + 1 / C_2 + ... + 1 / C_n"
+        },
+        {
+          nama: "Kapasitor dalam Rangkaian Paralel",
+          deskripsi: "C_total = C_1 + C_2 + ... + C_n"
+        }
+      ],
+      gambar: rangkaianArusSearahImage2
+    },
+    {
+      nama: "Contoh Aplikasi Rangkaian Arus Searah",
+      deskripsi:
+        "Rangkaian arus searah sering digunakan dalam berbagai perangkat, seperti alat elektronik rumah tangga, senter, dan perangkat portabel lainnya. Sumber dayanya biasanya berupa baterai atau sel surya.",
+      gambar: rangkaianArusSearahImage3,
+      path: "/rangkaian-arus-searah/aplikasi"
+    }
+  ];
 
-        {
-            nama: "InduksiElektromagnetik",
-            deskripsi:
-                "Induksi magnetik adalah fenomena yang terjadi ketika medan magnet berubah, menghasilkan arus listrik dalam suatu konduktor. Materi ini mencakup hukum Faraday dan Lenz.",
-            gambar: induksiMagnetikImage,
-            path: "/materi/induksi-magnetik",
-        },
-        {
-            nama: "Gelombang Elektromagnetik",
-            deskripsi:
-                "Gelombang elektromagnetik adalah gelombang yang dihasilkan oleh kombinasi medan listrik dan medan magnet yang saling tegak lurus. Materi ini mencakup teori Maxwell dan aplikasinya.",
-            gambar: gelombangElektromagnetikImage,
-            path: "/materi/gelombang-elektromagnetik",
-        },
-        {
-            nama: "Aplikasi Magnet dalam Kehidupan",
-            deskripsi:
-                "Materi ini membahas penggunaan magnet dalam teknologi sehari-hari seperti MRI, kompas, dan motor listrik.",
-            gambar: aplikasiMagnetImage,
-            path: "/materi/aplikasi-magnet",
-        },
-        
-    ];
-
-    return (
-        <div className="container mt-5">
-            <h1 className="text-center mb-4 fw-bold">Materi Bab 7: Medan Magnetik</h1>
-            <p className="text-center text-muted mb-5">Pelajari berbagai konsep dan penerapan medan magnet dalam kehidupan sehari-hari. Pilih materi untuk memulai pembelajaran.</p>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
-                {materiData.map((materi, index) => (
-                    <div key={index} className="col">
-                        <div className="card h-100 shadow-sm">
-                            <img src={materi.gambar} className="card-img-top" alt={materi.nama} style={{ height: "150px", objectFit: "cover" }} />
-                            <div className="card-body">
-                                <h5 className="card-title fw-semibold text-primary">{materi.nama}</h5>
-                                <p className="card-text text-secondary">{materi.deskripsi}</p>
-                            </div>
-                            <div className="card-footer bg-transparent border-0">
-                                <Link to={materi.path} className="btn btn-outline-primary w-100">Pelajari Lebih Lanjut</Link>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <div className="jurusan-container">
+      <h1>Materi Rangkaian Arus Searah</h1>
+      <div className="materi-container">
+        {materiData.map((materi, index) => (
+          <div key={index} className="materi-card">
+            <div className="image-container">
+              <img src={materi.gambar} alt={materi.nama} className="materi-image" />
             </div>
-        </div>
-    );
+            <div className="text-container">
+              <h2>{materi.nama}</h2>
+              <p>{materi.deskripsi}</p>
+              {materi.subMateri && (
+                <ul>
+                  {materi.subMateri.map((subMateri, subIndex) => (
+                    <li key={subIndex}>{subMateri.nama}: {subMateri.deskripsi}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Bab7;
