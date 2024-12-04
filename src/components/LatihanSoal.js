@@ -182,7 +182,7 @@ const LatihanSoal = () => {
 
  {/* Footer */}
  <footer className="footer">
-   <p>© 2024 Fisika Interactive | Built with ❤️</p>
+   <p>© 2024 Fisika Interactive | INSTITUT TEKNOLOGI DEL</p>
  </footer>
 </div>
 
