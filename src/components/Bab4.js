@@ -8,11 +8,11 @@ function TeknologiDigital() {
 
   return (
     <div className="container">
-      <h1 className="title">Teori Teknologi Digital</h1>
+      <h1 className="title">Teknologi Digital</h1>
 
       {/* Teori Section */}
       <section className="content">
-        <h2>Teori</h2>
+        <h2>Pengenalan</h2>
         <p>
           Teknologi Digital adalah teknologi yang memanfaatkan data dalam bentuk digital, yaitu angka
           biner (0 dan 1). Teknologi ini adalah dasar dari komputer modern, perangkat lunak,
@@ -47,7 +47,7 @@ function TeknologiDigital() {
         </p>
       </section>
 
-      {/* Example Section */}
+    
       <section className="content">
         <h2>Contoh:</h2>
         <p>1. Biner 1011 ke Desimal:</p>
