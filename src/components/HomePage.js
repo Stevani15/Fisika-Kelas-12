@@ -31,7 +31,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Navbar Section */}
+
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <button

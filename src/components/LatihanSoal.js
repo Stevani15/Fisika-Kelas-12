@@ -17,7 +17,7 @@ const LatihanSoal = () => {
               alt="Logo"
               className="logo-img me-3" 
             />
-            <h1 className="m-0">Fisika</h1>
+            <h1 className="m-0">PhysicsMadeEasy</h1>
           </div>
           <div>
             <a href="#" className="text-white mx-2">
