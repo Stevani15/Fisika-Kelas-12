@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/Bab5.css'; 
+import Navbar from "./Navbar"; 
 
 const Bab5 = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -16,6 +17,8 @@ const Bab5 = () => {
   return (
     <div className="main-container">
       <div className="content-container">
+      <Navbar />
+
         <h1 className="title">Fisika Modern</h1>
 
         <div className="section">

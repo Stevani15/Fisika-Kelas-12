@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/Bab6.css';
+import Navbar from "./Navbar"; 
 
 const Bab6 = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -10,6 +11,8 @@ const Bab6 = () => {
 
   const sections = [
     {
+      
+
       id: "introduction",
       title: "Pengenalan Arus Bolak-Balik (AC)",
       content: (
@@ -113,6 +116,7 @@ const Bab6 = () => {
   return (
     <div className="main-container">
       <div className="content-container">
+      <Navbar />
         <h1 className="title">Arus Bolak-Balik (AC)</h1>
         <p className="description">
           Arus bolak-balik (AC) adalah arus listrik yang arah dan besarannya berubah secara periodik terhadap waktu.

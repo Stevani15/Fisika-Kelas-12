@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/Bab4.css';
+import Navbar from "./Navbar"; 
 
 
 function Bab4() {
@@ -8,6 +9,7 @@ function Bab4() {
 
   return (
     <div className="container">
+     <Navbar />
       <h1 className="title">Teknologi Digital</h1>
 
 

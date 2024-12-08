@@ -5,6 +5,8 @@ import gambar2 from '../images/hukum_faraday.png'; // Gambar kedua
 import gambar3 from '../images/hukum_lenz.png'; // Gambar ketiga
 import gambar4 from '../images/fluks_magnetik.png'; // Gambar keempat
 import gambar5 from '../images/aplikasi_magnet.png'; // Gambar kelima
+import Navbar from "./Navbar"; 
+
 
 function Bab1() {
   const materi = [
@@ -56,7 +58,8 @@ function Bab1() {
 
   return (
     <div className="jurusan-container">
-  
+              <Navbar />
+
       <h1>Induksi Elektromagnetik</h1>
       {materi.map((item, index) => (
         <div key={index} className="materi-card">

@@ -5,6 +5,8 @@ import gambar2 from '../images/induksi.jpg'; // Gambar kedua
 import gambar3 from '../images/magnet3.jpg'; // Gambar ketiga
 import gambar4 from '../images/lorentz.jpg'; // Gambar keempat
 import gambar5 from '../images/magnet5.jpg'; // Gambar kelima
+import Navbar from "./Navbar"; 
+
 
 function Bab2() {
   const materi = [
@@ -42,6 +44,7 @@ function Bab2() {
 
   return (
     <div className="jurusan-container">
+      <Navbar />
       <h1>Medan Magnetik</h1>
       {materi.map((item, index) => (
         <div key={index} className="materi-card">

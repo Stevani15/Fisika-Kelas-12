@@ -1,7 +1,6 @@
-
 import React, { useState } from "react";
 import '../styles/Bab3.css';
-
+import Navbar from "./Navbar"; 
 
 function Bab3() {
   const [mass, setMass] = useState("");
@@ -43,6 +42,7 @@ function Bab3() {
 
   return (
     <div className="container">
+            <Navbar />
       <h1 className="title">Sumber Energi</h1>
 
     
