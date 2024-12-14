@@ -16,7 +16,7 @@ const HomePage = () => {
               alt="Logo"
               className="logo-img me-3" 
             />
-            <h1 className="m-0">PhysicsMadeEasy</h1>
+            <h1 className="m-0">Mata pelajaran SMA</h1>
           </div>
         </div>
       </header>
@@ -56,42 +56,32 @@ const HomePage = () => {
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
             <Link to="/Bab1" className="dropdown-item">
-            Bab.1
+           BIOLOGI
             </Link>
             </li>
             <li>
             <Link to="/bab2" className="dropdown-item">
-            Bab.2
+         KIMIA
           </Link>
           </li>
                   <li>
                     <Link to="/bab3" className="dropdown-item">
-                      Bab.3
+                    MATEMATIKA
                     </Link>
                   </li>
                   <li>
                     <Link to="/bab4" className="dropdown-item">
-                      Bab.4
+                   FISIKA
                     </Link>
                   </li>
                   <li>
                     <Link to="/bab5" className="dropdown-item">
-                      Bab.5
+                    EKONOMI
                     </Link>
                   </li>
                   <li>
                     <Link to="/bab6" className="dropdown-item">
-                      Bab.6
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/bab7" className="dropdown-item">
-                      Bab.7
-                    </Link>
-                  </li>
-                  <li>
-                  <Link to="/bab8" className="dropdown-item">
-                      Bab.8
+                    BAHASA.INGGRIS
                     </Link>
                   </li>
                 </ul>
@@ -108,55 +98,30 @@ const HomePage = () => {
 
       {/* Content Section */}
       <div className="title-container">
-        <h1 className="homepage-title">Materi Pelajaran Fisika Kelas 12 SMA</h1>
+        <h1 className="homepage-title">Materi Pelajaran Kelas 12 SMA</h1>
       </div>
-
-
-
     {/* Main Content */}
 <main className="main-content">
-  <p>Website ini dirancang untuk membantu siswa kelas 12 memahami berbagai konsep fisika secara mendalam. Materi yang disajikan mencakup penjelasan teori, contoh aplikasi, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
+  <p>Website ini dirancang untuk membantu siswa kelas 12 . Materi yang disajikan mencakup penjelasan teori, contoh aplikasi, dan latihan soal interaktif untuk mendukung proses pembelajaran.</p>
 
   <div className="topics">
   <div className="topic-card">
-      <h2>Bab 1</h2>
-      <h3>Induksi Elektromagnetik</h3>
-      <p>Prinsip induksi elektromagnetik dan penerapannya.</p>
+      <h2>BIOLOGI</h2>
     </div>
     <div className="topic-card">
-    <h2>Bab 2</h2>
-      <h3>Medan Magnetik</h3>
-      <p>Penjelasan tentang medan magnetik dan aplikasinya.</p>
+    <h2>KIMIA</h2>
     </div>
     <div className="topic-card">
-    <h2>Bab 3</h2>
-      <h3>Sumber Energi</h3>
-      <p>Pelajari sumber energi yang digunakan dalam kehidupan sehari-hari.</p>
+    <h2>MATEMATIKA</h2>
     </div>
     <div className="topic-card">
-    <h2>Bab 4</h2>
-      <h3>Teknologi Digital</h3>
-      <p>Eksplorasi bagaimana fisika diterapkan dalam teknologi digital.</p>
+    <h2>EKONOMI</h2>
     </div>
     <div className="topic-card">
-    <h2>Bab 5</h2>
-      <h3>Fisika Modern</h3>
-      <p>Konsep fisika modern, seperti relativitas dan mekanika kuantum.</p>
+    <h2>FISIKA</h2>
     </div>
     <div className="topic-card">
-    <h2>Bab 6</h2>
-      <h3>Rangkaian Arus Bolak Balik</h3>
-      <p>Dasar-dasar rangkaian listrik arus bolak-balik.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 7</h2>
-      <h3>Rangkaian Arus Searah</h3>
-      <p>Prinsip Rangkaian Arus Searah dan penerapannya.</p>
-    </div>
-    <div className="topic-card">
-    <h2>Bab 8</h2>
-      <h3>Gelombang Elektromagnetik</h3>
-      <p>Prinsip Gelombang elektromagnetik dan penerapannya.</p>
+    <h2>BAHASA.INGGRIS</h2>
     </div>
   </div>
 </main>
